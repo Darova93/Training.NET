@@ -1,0 +1,44 @@
+define numerostr, texto[]
+numero=convertir a entero(numerostr)
+longitud=numero.length
+tercias=longitud/3
+si tercias>2
+	texto=funcion(numero) + " millones"
+	numero = numero%1000000
+	numerostr=convertir a str(numero)
+	tercias=(numerostr.length)/3
+si tercias>1
+	texto=texto + funcion(numero) + " mil"
+	numero=numero%1000
+	numerostr=convertir a str(numero)
+	tercias=(numerostr.length)/3
+si tercias>0
+	texto=texto + funcion(numero)
+	si numero == 0
+		texto=texto + "cero"
+
+texto = texto + funcion(numero) + " pesos"
+
+funcion(numero)
+define centenas, decenas, unidades;
+string[] texto;
+string[] uni=new string[] {"", "un", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve"};
+string[] dec=new string[] {"", "diez", "veinte", "treinta", "cuarenta", "cincuenta", "sesenta", "setenta", "ochenta", "noventa", "dieci", "once", "doce", "trece", "catorce", "quince"};
+string[] cen=new string[] {"", "ciento", "doscientos", "trescientos", "cuatrocientos", "quinientos", "seiscientos", "ochocientos", "novecientos"};
+centenas = (numero-numero%100)/100;
+decenas = (numero-centenas*100-numero%10)/10;
+unidades = (numero-centenas*100-decenas*10);
+if decenas==0&&unidades==0&&centenas==1
+	texto=cien;
+else
+	texto=cen[centenas];
+if unidades>0&&unidades<6&&(decenas==1ORdecenas==2)
+	texto=texto + dec[10+unidades];
+else
+	if decenas>0&&unidades>0
+		texto=texto + dec[decenas] + "y" + uni[unidades];
+	else 
+		texto=texto + uni[unidades];
+
+
+
