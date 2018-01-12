@@ -3,6 +3,6 @@ public class mi primeraclase
 private string algo="algo";
 public void metodo()
     {
-        var mensaje="esto lo escribi en la version 1";
+        var mensaje="esto lo escribi en la version 2";
     }
 }
