@@ -1,6 +1,6 @@
 public class mi primeraclase
 {
-private string algo="nada";
+private string algo="algo";
 public void metodo()
     {
         var mensaje="esto lo escribi en la version 1";
