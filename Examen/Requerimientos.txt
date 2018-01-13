@@ -1,0 +1,27 @@
+Requerimientos funcionales
+Catálogo de productos
+	Lista del material con el que cuenta la biblioteca (nombre, autor, tipo de material)
+	Registrar nuevos productos	
+	Registrar nuevos tipos de productos
+	Registro de productos existentes en la biblioteca
+Catálogo de usuarios
+	Agregar nuevos usuarios con datos personales
+	Agregar foto al registro de usuarios
+	Préstamos activos
+Préstamos de material
+	Agregar préstamos a los usuarios
+	Comparar región del producto a prestar con el del dispositivo registrado del usuario
+Retorno de préstamos
+	Identificar si el préstamo se venció
+	Renovación de préstamos una vez
+Historial de préstamos
+	Lista de préstamos activos
+	Identificación de préstamos próximos a vencer
+Requerimientos no funcionales
+Seguridad
+	Login de administrador/bibliotecari@	
+
+
+
+
+David Rodríguez Vázquez
