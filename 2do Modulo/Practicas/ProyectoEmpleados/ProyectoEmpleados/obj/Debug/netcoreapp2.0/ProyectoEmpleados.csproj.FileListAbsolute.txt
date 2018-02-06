@@ -1,0 +1,13 @@
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\ProyectoEmpleados\bin\Debug\netcoreapp2.0\ProyectoEmpleados.deps.json
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\ProyectoEmpleados\bin\Debug\netcoreapp2.0\ProyectoEmpleados.runtimeconfig.json
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\ProyectoEmpleados\bin\Debug\netcoreapp2.0\ProyectoEmpleados.runtimeconfig.dev.json
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\ProyectoEmpleados\bin\Debug\netcoreapp2.0\ProyectoEmpleados.dll
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\ProyectoEmpleados\bin\Debug\netcoreapp2.0\ProyectoEmpleados.pdb
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\ProyectoEmpleados\bin\Debug\netcoreapp2.0\Libreriadeclases.dll
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\ProyectoEmpleados\bin\Debug\netcoreapp2.0\Libreriadeclases.pdb
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\ProyectoEmpleados\obj\Debug\netcoreapp2.0\ProyectoEmpleados.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\ProyectoEmpleados\obj\Debug\netcoreapp2.0\ProyectoEmpleados.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\ProyectoEmpleados\obj\Debug\netcoreapp2.0\ProyectoEmpleados.AssemblyInfoInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\ProyectoEmpleados\obj\Debug\netcoreapp2.0\ProyectoEmpleados.AssemblyInfo.cs
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\ProyectoEmpleados\obj\Debug\netcoreapp2.0\ProyectoEmpleados.dll
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\ProyectoEmpleados\obj\Debug\netcoreapp2.0\ProyectoEmpleados.pdb

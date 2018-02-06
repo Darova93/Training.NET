@@ -1,0 +1,14 @@
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\presentacion\Presentacion\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\presentacion\Presentacion\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\presentacion\Presentacion\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\presentacion\Presentacion\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\presentacion\Presentacion\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\presentacion\Presentacion\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\presentacion\Presentacion\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacion\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacion\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacion\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacion\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacion\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacion\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacion\Presentacion\obj\Debug\Presentacion.pdb

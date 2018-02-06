@@ -1,0 +1,10 @@
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacionforms\Presentacionforms\Presentacionforms\bin\Debug\Presentacionforms.exe.config
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacionforms\Presentacionforms\Presentacionforms\bin\Debug\Presentacionforms.exe
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacionforms\Presentacionforms\Presentacionforms\bin\Debug\Presentacionforms.pdb
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacionforms\Presentacionforms\Presentacionforms\obj\Debug\Presentacionforms.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacionforms\Presentacionforms\Presentacionforms\obj\Debug\Presentacionforms.Form1.resources
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacionforms\Presentacionforms\Presentacionforms\obj\Debug\Presentacionforms.Properties.Resources.resources
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacionforms\Presentacionforms\Presentacionforms\obj\Debug\Presentacionforms.csproj.GenerateResource.Cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacionforms\Presentacionforms\Presentacionforms\obj\Debug\Presentacionforms.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacionforms\Presentacionforms\Presentacionforms\obj\Debug\Presentacionforms.exe
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Presentacionforms\Presentacionforms\Presentacionforms\obj\Debug\Presentacionforms.pdb

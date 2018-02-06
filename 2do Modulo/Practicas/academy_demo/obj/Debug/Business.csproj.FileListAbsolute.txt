@@ -1,0 +1,16 @@
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\academy_demo\bin\Debug\academy_demo.exe.config
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\academy_demo\bin\Debug\academy_demo.exe
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\academy_demo\bin\Debug\academy_demo.pdb
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\academy_demo\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\academy_demo\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\academy_demo\obj\Debug\academy_demo.exe
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\academy_demo\obj\Debug\academy_demo.pdb
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\academy_demo\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\academy_demo\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\academy_demo\bin\Debug\Commons.dll
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\academy_demo\bin\Debug\Commons.pdb
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\academy_demo\bin\Debug\Business.exe.config
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\academy_demo\bin\Debug\Business.exe
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\academy_demo\bin\Debug\Business.pdb
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\academy_demo\obj\Debug\Business.exe
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\academy_demo\obj\Debug\Business.pdb

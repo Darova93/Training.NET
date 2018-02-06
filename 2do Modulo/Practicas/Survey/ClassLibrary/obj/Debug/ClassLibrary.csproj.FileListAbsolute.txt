@@ -1,0 +1,6 @@
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Survey\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Survey\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Survey\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Survey\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Survey\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Survey\ClassLibrary\obj\Debug\ClassLibrary.pdb

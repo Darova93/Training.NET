@@ -1,0 +1,6 @@
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\Commons\bin\Debug\Commons.dll
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\Commons\bin\Debug\Commons.pdb
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\Commons\obj\Debug\Commons.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\Commons\obj\Debug\Commons.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\Commons\obj\Debug\Commons.dll
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\Commons\obj\Debug\Commons.pdb

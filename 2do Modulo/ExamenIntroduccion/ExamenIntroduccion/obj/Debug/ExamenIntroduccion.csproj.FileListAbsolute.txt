@@ -1,0 +1,9 @@
+C:\Users\Academia\Documents\David Rodriguez\ExamenIntroduccion\ExamenIntroduccion\obj\Debug\ExamenIntroduccion.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\David Rodriguez\ExamenIntroduccion\ExamenIntroduccion\bin\Debug\ExamenIntroduccion.exe.config
+C:\Users\Academia\Documents\David Rodriguez\ExamenIntroduccion\ExamenIntroduccion\bin\Debug\ExamenIntroduccion.exe
+C:\Users\Academia\Documents\David Rodriguez\ExamenIntroduccion\ExamenIntroduccion\bin\Debug\ExamenIntroduccion.pdb
+C:\Users\Academia\Documents\David Rodriguez\ExamenIntroduccion\ExamenIntroduccion\bin\Debug\ClassLibrary.dll
+C:\Users\Academia\Documents\David Rodriguez\ExamenIntroduccion\ExamenIntroduccion\bin\Debug\ClassLibrary.pdb
+C:\Users\Academia\Documents\David Rodriguez\ExamenIntroduccion\ExamenIntroduccion\obj\Debug\ExamenIntroduccion.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\David Rodriguez\ExamenIntroduccion\ExamenIntroduccion\obj\Debug\ExamenIntroduccion.exe
+C:\Users\Academia\Documents\David Rodriguez\ExamenIntroduccion\ExamenIntroduccion\obj\Debug\ExamenIntroduccion.pdb

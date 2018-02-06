@@ -1,0 +1,9 @@
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Survey\Survey\obj\Debug\Survey.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Survey\Survey\obj\Debug\Survey.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Survey\Survey\bin\Debug\Survey.exe.config
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Survey\Survey\bin\Debug\Survey.exe
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Survey\Survey\bin\Debug\Survey.pdb
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Survey\Survey\bin\Debug\ClassLibrary.dll
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Survey\Survey\bin\Debug\ClassLibrary.pdb
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Survey\Survey\obj\Debug\Survey.exe
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Survey\Survey\obj\Debug\Survey.pdb

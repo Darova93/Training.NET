@@ -1,0 +1,9 @@
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Numeroprimo\Numerosprimos\Numerosprimos\obj\Debug\Numerosprimos.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Numeroprimo\Numerosprimos\Numerosprimos\obj\Debug\Numerosprimos.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Numeroprimo\Numerosprimos\Numerosprimos\bin\Debug\Numerosprimos.exe.config
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Numeroprimo\Numerosprimos\Numerosprimos\bin\Debug\Numerosprimos.exe
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Numeroprimo\Numerosprimos\Numerosprimos\bin\Debug\Numerosprimos.pdb
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Numeroprimo\Numerosprimos\Numerosprimos\obj\Debug\Numerosprimos.exe
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Numeroprimo\Numerosprimos\Numerosprimos\obj\Debug\Numerosprimos.pdb
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Numeroprimo\Numerosprimos\Numerosprimos\bin\Debug\ClassLibrary1.dll
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\Numeroprimo\Numerosprimos\Numerosprimos\bin\Debug\ClassLibrary1.pdb

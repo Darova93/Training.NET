@@ -1,0 +1,9 @@
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\Libreriadeclases\bin\Debug\netstandard2.0\Libreriadeclases.deps.json
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\Libreriadeclases\bin\Debug\netstandard2.0\Libreriadeclases.dll
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\Libreriadeclases\bin\Debug\netstandard2.0\Libreriadeclases.pdb
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\Libreriadeclases\obj\Debug\netstandard2.0\Libreriadeclases.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\Libreriadeclases\obj\Debug\netstandard2.0\Libreriadeclases.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\Libreriadeclases\obj\Debug\netstandard2.0\Libreriadeclases.AssemblyInfoInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\Libreriadeclases\obj\Debug\netstandard2.0\Libreriadeclases.AssemblyInfo.cs
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\Libreriadeclases\obj\Debug\netstandard2.0\Libreriadeclases.dll
+C:\Users\Academia\Documents\david_rodriguezv\Practicas\ProyectoEmpleados\Libreriadeclases\obj\Debug\netstandard2.0\Libreriadeclases.pdb

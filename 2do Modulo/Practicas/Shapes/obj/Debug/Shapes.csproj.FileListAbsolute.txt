@@ -1,0 +1,7 @@
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\Shapes\bin\Debug\Shapes.exe.config
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\Shapes\bin\Debug\Shapes.exe
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\Shapes\bin\Debug\Shapes.pdb
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\Shapes\obj\Debug\Shapes.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\Shapes\obj\Debug\Shapes.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\Shapes\obj\Debug\Shapes.exe
+C:\Users\Academia\Documents\david_rodriguezv\2do Modulo\Practicas\Shapes\obj\Debug\Shapes.pdb
