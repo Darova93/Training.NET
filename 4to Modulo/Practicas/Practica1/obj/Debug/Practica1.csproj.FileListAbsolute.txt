@@ -7,3 +7,12 @@ C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\
 C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\obj\Debug\Practica1.csprojResolveAssemblyReference.cache
 C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\obj\Debug\Practica1.exe
 C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\obj\Debug\Practica1.pdb
+E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\bin\Debug\Practica1.exe.config
+E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\bin\Debug\Practica1.exe
+E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\bin\Debug\Practica1.pdb
+E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\bin\Debug\DataAccess.dll
+E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\bin\Debug\DataAccess.pdb
+E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\obj\Debug\Practica1.csprojResolveAssemblyReference.cache
+E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\obj\Debug\Practica1.csproj.CoreCompileInputs.cache
+E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\obj\Debug\Practica1.exe
+E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\obj\Debug\Practica1.pdb

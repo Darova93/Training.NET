@@ -87,14 +87,53 @@ namespace DataAccess.Implementation.ADO
 
         }
 
-        public QuestionTypeDTO GetById()
+        public QuestionTypeDTO GetById(int entityId)
         {
-            throw new NotImplementedException();
+            QuestionTypeDTO item = new QuestionTypeDTO();
+
+            string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
+
+            string commandText = "SELECT * FROM [dbo].[QuestionTypes] WHERE QuestionTypeId = @entityId";
+
+            using (SqlDataReader reader = CommandHelper.ExecuteReader(connectionString, commandText, CommandType.Text))
+            {
+                if (reader.HasRows)
+                {
+                    item = new QuestionTypeDTO
+                    {
+                        QuestionTypeId = (int)reader["QuestionTypeId"],
+                        Description = reader["Description"].ToString(),
+                    };
+                }
+                else
+                {
+                    Console.WriteLine("Id not found");
+                }
+
+                return item;
+
+            }
         }
 
         public void Update(QuestionTypeDTO entity)
         {
-            throw new NotImplementedException();
+            int entityId = entity.QuestionTypeId;
+
+            string description = "Gay";
+
+            SqlParameter[] parameter = new SqlParameter[2];
+
+            string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
+            
+            string commandText = "UPDATE [dbo].[QuestionTypes] SET [Description] = @Description WHERE [QuestionTypeId] = @entityId";
+
+            parameter[0] = new SqlParameter("@Description", description);
+
+            parameter[1] = new SqlParameter("@entityId", entityId);
+
+            int count = CommandHelper.ExecuteNonQuery(connectionString, commandText, CommandType.Text, parameter);
+
+            Console.WriteLine("Items modified {0}", count);
         }
 
     }

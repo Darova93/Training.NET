@@ -4,3 +4,9 @@ C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\Data
 C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccess\bin\Debug\DataAccess.pdb
 C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccess\obj\Debug\DataAccess.pdb
+E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\DataAccess\bin\Debug\DataAccess.dll
+E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\DataAccess\bin\Debug\DataAccess.pdb
+E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\DataAccess\obj\Debug\DataAccess.dll
+E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\DataAccess\obj\Debug\DataAccess.pdb

@@ -7,7 +7,7 @@ namespace DataAccess.Interfaces
     {
         List<QuestionTypeDTO> GetAll();
 
-        QuestionTypeDTO GetById();
+        QuestionTypeDTO GetById(int entityId);
 
         void Add(QuestionTypeDTO entity);
 
