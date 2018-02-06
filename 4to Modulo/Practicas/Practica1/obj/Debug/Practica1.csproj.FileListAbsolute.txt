@@ -1,0 +1,9 @@
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\obj\Debug\Practica1.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\Practica1.exe.config
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\Practica1.exe
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\Practica1.pdb
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\DataAccess.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\DataAccess.pdb
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\obj\Debug\Practica1.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\obj\Debug\Practica1.exe
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\obj\Debug\Practica1.pdb
