@@ -12,27 +12,7 @@ namespace DataAccess.ImplementationOffline
     {
         public void Add(QuestionDTO entity)
         {
-            int rowCount = 0;
-
-            string connString = ConnectionStringHelper.GetConnStringFromConfigFile();
-            string insertCommandText = "INSERT INTO [dbo].[Question] ([Text],[QuestionTypeId]) VALUES (@Text, @QuestionTypeId)";
-
-            SqlConnection connStringObj = new SqlConnection(connString);
-            SqlCommand insertCommand = new SqlCommand(insertCommandText, connStringObj);
-            
-            insertCommand.Parameters.Add("@Text", SqlDbType.VarChar, 50).Value = entity.Text;
-            insertCommand.Parameters.Add("@QuestionTypeId", SqlDbType.Int).Value = entity.QuestionTypeId;
-
-            SqlDataAdapter adapter = new SqlDataAdapter
-            {
-                InsertCommand = insertCommand
-            };
-
-            connStringObj.Open();
-            rowCount = adapter.InsertCommand.ExecuteNonQuery();
-            connStringObj.Close();
-
-            Console.WriteLine("Inserted {0} rows", rowCount);
+            throw new NotImplementedException();
         }
 
         public int CountQuestion()
@@ -42,24 +22,41 @@ namespace DataAccess.ImplementationOffline
 
         public void Delete(int entityId)
         {
-            throw new NotImplementedException();
+            string connString = ConnectionStringHelper.GetConnStringFromConfigFile();
+            SqlConnection connStringObj = new SqlConnection(connString);
+            SqlCommand command = new SqlCommand("dbo.uspDeleteQuestion", connStringObj);
+
+            command.Parameters.Add("QuestionId", SqlDbType.Int).Value = entityId;
+            command.CommandType = CommandType.StoredProcedure;
+            connStringObj.Open();
+
+            int rows = command.ExecuteNonQuery();
+
+            Console.WriteLine("{0} row(s) deleted", rows);
         }
 
         public List<QuestionDTO> GetAll()
         {
+            List<QuestionDTO> questionlist = new List<QuestionDTO>();
             string connString = ConnectionStringHelper.GetConnStringFromConfigFile();
-            string commandText = "SELECT * FROM [Survey].[dbo].[Question]";
-            List<QuestionDTO> results = new List<QuestionDTO>();
-            DataSet dsQuestionType = new DataSet();
-            SqlDataAdapter adapter = new SqlDataAdapter(commandText, connString);
+            SqlConnection connStringobj = new SqlConnection(connString);
+            SqlCommand command = new SqlCommand("dbo.uspGetAllQuestions", connStringobj);
 
-            using(SqlConnection conn = new SqlConnection(connString))
+            command.CommandType = CommandType.StoredProcedure;
+            connStringobj.Open();
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
             {
-                adapter.Fill(dsQuestionType, "Question");
+                questionlist.Add(new QuestionDTO
+                {
+                    QuestionId = (int)reader["QuestionId"],
+                    Text = reader["Text"].ToString(),
+                    QuestionTypeId = (int)reader["QuestionTypeId"]
+                });
             }
 
-
-
+            return questionlist;
         }
 
         public QuestionDTO GetById(int entityId)
@@ -71,5 +68,35 @@ namespace DataAccess.ImplementationOffline
         {
             throw new NotImplementedException();
         }
+
+        public List<OptionDTO> OptionsByQuestionId(int entityId)
+        {
+            List<OptionDTO> optionlist = new List<OptionDTO>();
+            string connstring = ConnectionStringHelper.GetConnStringFromConfigFile();
+            SqlConnection connstringobj = new SqlConnection(connstring);
+
+            SqlCommand command = new SqlCommand("dbo.uspGetOptionsbyQuestionId", connstringobj);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.Add("@Id", SqlDbType.Int).Value = entityId;
+
+            connstringobj.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                optionlist.Add(new OptionDTO
+                {
+                    OptionId = (int)reader["QuestionId"],
+                    Text = reader["Option"].ToString()
+                });
+            }
+
+            foreach (OptionDTO question in optionlist)
+            {
+                Console.WriteLine("{0} {1}", question.OptionId, question.Text);
+            }
+            
+            return optionlist;
+        }
+
     }
 }

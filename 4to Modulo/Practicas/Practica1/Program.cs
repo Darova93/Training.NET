@@ -1,9 +1,11 @@
-﻿using DataAccess.Implementation;
+﻿using DataAccess.DTO;
+using DataAccess.Implementation;
 using DataAccess.Implementation.ADO;
 using DataAccess.ImplementationOffline;
 using DataAccess.Interfaces;
 using DataAccess.InterfacesOffline;
 using System;
+using System.Collections.Generic;
 
 namespace Practica1
 {
@@ -59,7 +61,15 @@ namespace Practica1
             //    Console.WriteLine("{0} {1} {2} {3}", item.AnswerId, item.QuestionId, item.OpenValue, item.OptionId);
             //}
 
+            //List<QuestionDTO> results = new List<QuestionDTO>();
+            //results = questionRepositoryOff.GetAll();
+            //foreach(QuestionDTO question in results)
+            //{
+            //    Console.WriteLine("{0} {1} {2}", question.QuestionId, question.Text, question.QuestionTypeId);
+            //}
 
+            QuestionADOOff adoOff = new QuestionADOOff();
+            adoOff.OptionsByQuestionId(4);
 
             Console.ReadKey();
         }
