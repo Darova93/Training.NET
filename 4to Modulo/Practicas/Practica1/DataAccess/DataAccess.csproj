@@ -41,10 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\OptionDTO.cs" />
+    <Compile Include="DTO\QuestionDTO.cs" />
     <Compile Include="DTO\QuestionTypeDTO.cs" />
+    <Compile Include="Implementation\ADO\OptionADO.cs" />
     <Compile Include="Implementation\ADO\QuestionTypeADO.cs" />
     <Compile Include="Implementation\Helpers\CommandHelper.cs" />
     <Compile Include="Implementation\Helpers\ConnectionStringHelper.cs" />
+    <Compile Include="Implementation\ADO\QuestionADO.cs" />
+    <Compile Include="Interfaces\IOptionRepository.cs" />
+    <Compile Include="Interfaces\IQuestionRepository.cs" />
     <Compile Include="Interfaces\IQuestionTypeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

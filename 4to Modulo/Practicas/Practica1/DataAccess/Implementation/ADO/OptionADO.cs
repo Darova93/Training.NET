@@ -1,33 +1,35 @@
-﻿using DataAccess.DTO;
-using DataAccess.Implementation.Helpers;
-using DataAccess.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using DataAccess.DTO;
+using DataAccess.Implementation.Helpers;
+using DataAccess.Interfaces;
 
 namespace DataAccess.Implementation.ADO
 {
-    public class QuestionTypeADO : IQuestionTypeRepository
+    class OptionADO : IOptionRepository
     {
-        public void Add(QuestionTypeDTO entity)
+        public void Add(OptionDTO entity)
         {
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
+            string commandText = "INSERT INTO [dbo].[Options] ([Text]) VALUES (@Text)";
 
-            string commandText = "INSERT INTO [dbo].[QuestionTypes]([Description])VALUES(@Description)";
-
-            SqlParameter parameter = new SqlParameter("@Description", entity.Description);
+            SqlParameter parameter = new SqlParameter("@Text", entity.Text);
 
             int rows = CommandHelper.ExecuteNonQuery(connectionString, commandText, CommandType.Text, parameter);
 
             Console.WriteLine("{0} row(s) inserted", rows);
         }
 
-        public int CountQuestionType()
+        public int CountOption()
         {
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
 
-            string commandText = "SELECT COUNT [QuestionTypeId] FROM [SurveyDB].[dbo].[QuestionTypes]";
+            string commandText = "SELECT COUNT [OptionId] FROM [SurveyDB].[dbo].[Options]";
 
             object oValue = CommandHelper.ExecuteScalar(connectionString, commandText, CommandType.Text);
 
@@ -45,7 +47,7 @@ namespace DataAccess.Implementation.ADO
         {
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
 
-            string commandText = "DELETE FROM [dbo].[QuestionTypes] WHERE [QuestionTypeId] = @entityId";
+            string commandText = "DELETE FROM [dbo].[Options] WHERE [OptionId] = @entityId";
 
             SqlParameter parameter = new SqlParameter("@entityId", entityId);
 
@@ -54,14 +56,13 @@ namespace DataAccess.Implementation.ADO
             Console.WriteLine("{0} row(s) deleted", rows);
         }
 
-        public List<QuestionTypeDTO> GetAll()
+        public List<OptionDTO> GetAll()
         {
-
-            List<QuestionTypeDTO> results = new List<QuestionTypeDTO>();
+            List<OptionDTO> results = new List<OptionDTO>();
 
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
 
-            string commandText = "SELECT * FROM [dbo].[QuestionTypes]";
+            string commandText = "SELECT * FROM [dbo].[Options]";
 
             using (SqlDataReader reader = CommandHelper.ExecuteReader(connectionString, commandText, CommandType.Text))
             {
@@ -69,10 +70,10 @@ namespace DataAccess.Implementation.ADO
                 {
                     while (reader.Read())
                     {
-                        results.Add(new QuestionTypeDTO
+                        results.Add(new OptionDTO
                         {
-                            QuestionTypeId = (int)reader["QuestionTypeId"],
-                            Description = reader["Description"].ToString()
+                            OptionId = (int)reader["OptionId"],
+                            Text = reader["Text"].ToString()
                         });
                     }
                 }
@@ -83,16 +84,15 @@ namespace DataAccess.Implementation.ADO
             }
 
             return results;
-
         }
 
-        public QuestionTypeDTO GetById(int entityId)
+        public OptionDTO GetById(int entityId)
         {
-            QuestionTypeDTO item = new QuestionTypeDTO();
+            OptionDTO item = new OptionDTO();
 
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
 
-            string commandText = "SELECT * FROM [dbo].[QuestionTypes] WHERE [QuestionTypeId] = @entityId";
+            string commandText = "SELECT * FROM [dbo].[Options] WHERE [OptionId] = @entityId";
 
             SqlParameter parameter = new SqlParameter("@entityId", entityId);
 
@@ -100,10 +100,10 @@ namespace DataAccess.Implementation.ADO
             {
                 if (reader.HasRows)
                 {
-                    item = new QuestionTypeDTO
+                    item = new OptionDTO
                     {
-                        QuestionTypeId = (int)reader["QuestionTypeId"],
-                        Description = reader["Description"].ToString(),
+                        OptionId = (int)reader["OptionId"],
+                        Text = reader["Text"].ToString(),
                     };
                 }
                 else
@@ -115,26 +115,24 @@ namespace DataAccess.Implementation.ADO
             }
         }
 
-        public void Update(QuestionTypeDTO entity)
+        public void Update(OptionDTO entity)
         {
-            int entityId = entity.QuestionTypeId;
+            int entityId = entity.OptionId;
 
-            string description = "Gay";
+            string text = "Male";
 
             SqlParameter[] parameter = new SqlParameter[2];
 
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
-            
-            string commandText = "UPDATE [dbo].[QuestionTypes] SET [Description] = @Description WHERE [QuestionTypeId] = @entityId";
 
-            parameter[0] = new SqlParameter("@Description", description);
+            string commandText = "UPDATE [dbo].[Options] SET [Text] = @Text WHERE [OptionId] = @entityId";
 
-            parameter[1] = new SqlParameter("@entityId", entityId);
+            parameter[0] = new SqlParameter("@Text", text);
+            parameter[1] = new SqlParameter("@entityId", entityId); 
 
             int count = CommandHelper.ExecuteNonQuery(connectionString, commandText, CommandType.Text, parameter);
 
             Console.WriteLine("Items modified: {0}", count);
         }
-
     }
 }
