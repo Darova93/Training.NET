@@ -8,24 +8,27 @@ using System.Data.SqlClient;
 
 namespace DataAccess.Implementation.ADO
 {
-    public class OptionADO : IOptionRepository
+    public class AnswerADO : IAnswerRepository
     {
-        public void Add(OptionDTO entity)
+        public void Add(AnswerDTO entity)
         {
+            SqlParameter[] parameter = new SqlParameter[3];
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
-            string commandText = "INSERT INTO [dbo].[Options] ([Text]) VALUES (@Text)";
+            string commandText = "INSERT INTO [dbo].[Answers] ([QuestionId],[OpenValue],[OptionId]) VALUES (@QuestionId, @OpenValue, @OptionId)";
 
-            SqlParameter parameter = new SqlParameter("@Text", entity.Text);
+            parameter [0] = new SqlParameter("@QuestionId", entity.QuestionId);
+            parameter [1] = new SqlParameter("@OpenValue", entity.OpenValue);
+            parameter[3] = new SqlParameter("@OptionId", entity.OptionId);
 
             int rows = CommandHelper.ExecuteNonQuery(connectionString, commandText, CommandType.Text, parameter);
 
             Console.WriteLine("{0} row(s) inserted", rows);
         }
 
-        public int CountOption()
+        public int CountAnswer()
         {
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
-            string commandText = "SELECT COUNT [OptionId] FROM [SurveyDB].[dbo].[Options]";
+            string commandText = "SELECT COUNT [AnswerId] FROM [SurveyDB].[dbo].[Anwers]";
 
             object oValue = CommandHelper.ExecuteScalar(connectionString, commandText, CommandType.Text);
 
@@ -42,7 +45,7 @@ namespace DataAccess.Implementation.ADO
         public void Delete(int entityId)
         {
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
-            string commandText = "DELETE FROM [dbo].[Options] WHERE [OptionId] = @entityId";
+            string commandText = "DELETE FROM [dbo].[Answers] WHERE [AnswerId] = @entityId";
 
             SqlParameter parameter = new SqlParameter("@entityId", entityId);
 
@@ -51,12 +54,12 @@ namespace DataAccess.Implementation.ADO
             Console.WriteLine("{0} row(s) deleted", rows);
         }
 
-        public List<OptionDTO> GetAll()
+        public List<AnswerDTO> GetAll()
         {
-            List<OptionDTO> results = new List<OptionDTO>();
+            List<AnswerDTO> results = new List<AnswerDTO>();
 
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
-            string commandText = "SELECT * FROM [dbo].[Options]";
+            string commandText = "SELECT * FROM [dbo].[Answers]";
 
             using (SqlDataReader reader = CommandHelper.ExecuteReader(connectionString, commandText, CommandType.Text))
             {
@@ -64,10 +67,12 @@ namespace DataAccess.Implementation.ADO
                 {
                     while (reader.Read())
                     {
-                        results.Add(new OptionDTO
+                        results.Add(new AnswerDTO
                         {
-                            OptionId = (int)reader["OptionId"],
-                            Text = reader["Text"].ToString()
+                            AnswerId = (int)reader["AnswerId"],
+                            QuestionId = (int)reader["QuestionId"],
+                            OpenValue = reader["OpenValue"].ToString(),
+                            OptionId = (int)reader["OptionId"]
                         });
                     }
                 }
@@ -80,12 +85,12 @@ namespace DataAccess.Implementation.ADO
             return results;
         }
 
-        public OptionDTO GetById(int entityId)
+        public AnswerDTO GetById(int entityId)
         {
-            OptionDTO item = new OptionDTO();
+            AnswerDTO item = new AnswerDTO();
 
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
-            string commandText = "SELECT * FROM [dbo].[Options] WHERE [OptionId] = @entityId";
+            string commandText = "SELECT * FROM [dbo].[Answers] WHERE [AnswerId] = @entityId";
 
             SqlParameter parameter = new SqlParameter("@entityId", entityId);
 
@@ -93,10 +98,12 @@ namespace DataAccess.Implementation.ADO
             {
                 if (reader.HasRows)
                 {
-                    item = new OptionDTO
+                    item = new AnswerDTO
                     {
+                        AnswerId = (int)reader["AnswerId"],
+                        QuestionId = (int)reader["QuestionId"],
+                        OpenValue = reader["OpenValue"].ToString(),
                         OptionId = (int)reader["OptionId"],
-                        Text = reader["Text"].ToString(),
                     };
                 }
                 else
@@ -108,17 +115,21 @@ namespace DataAccess.Implementation.ADO
             }
         }
 
-        public void Update(OptionDTO entity)
+        public void Update(AnswerDTO entity)
         {
-            int entityId = entity.OptionId;
-            string text = "Male";
-            SqlParameter[] parameter = new SqlParameter[2];
+            int entityId = entity.AnswerId;
+            int questionid = 1;
+            string openvalue = "Open Answer";
+            int optionid = 1;
+            SqlParameter[] parameter = new SqlParameter[4];
 
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
-            string commandText = "UPDATE [dbo].[Options] SET [Text] = @Text WHERE [OptionId] = @entityId";
+            string commandText = "UPDATE [dbo].[Answers] SET ([QuestionId],[OpenValue],[OptionId]) = (@QuestionId, @OpenValue, @OptionId) WHERE [AnswerId] = @entityId";
 
-            parameter[0] = new SqlParameter("@Text", text);
-            parameter[1] = new SqlParameter("@entityId", entityId); 
+            parameter[0] = new SqlParameter("@QuestionId", questionid);
+            parameter[1] = new SqlParameter("@openvalue", openvalue);
+            parameter[2] = new SqlParameter("@OptionId", optionid);
+            parameter[3] = new SqlParameter("@entityId", entityId);
 
             int count = CommandHelper.ExecuteNonQuery(connectionString, commandText, CommandType.Text, parameter);
 

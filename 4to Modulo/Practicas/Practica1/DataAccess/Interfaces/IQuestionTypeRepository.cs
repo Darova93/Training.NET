@@ -16,6 +16,5 @@ namespace DataAccess.Interfaces
         void Delete(int entityId);
 
         int CountQuestionType();
-
     }
 }

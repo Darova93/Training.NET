@@ -13,7 +13,6 @@ namespace DataAccess.Implementation.ADO
         public void Add(QuestionTypeDTO entity)
         {
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
-
             string commandText = "INSERT INTO [dbo].[QuestionTypes]([Description])VALUES(@Description)";
 
             SqlParameter parameter = new SqlParameter("@Description", entity.Description);
@@ -26,7 +25,6 @@ namespace DataAccess.Implementation.ADO
         public int CountQuestionType()
         {
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
-
             string commandText = "SELECT COUNT [QuestionTypeId] FROM [SurveyDB].[dbo].[QuestionTypes]";
 
             object oValue = CommandHelper.ExecuteScalar(connectionString, commandText, CommandType.Text);
@@ -44,7 +42,6 @@ namespace DataAccess.Implementation.ADO
         public void Delete(int entityId)
         {
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
-
             string commandText = "DELETE FROM [dbo].[QuestionTypes] WHERE [QuestionTypeId] = @entityId";
 
             SqlParameter parameter = new SqlParameter("@entityId", entityId);
@@ -60,7 +57,6 @@ namespace DataAccess.Implementation.ADO
             List<QuestionTypeDTO> results = new List<QuestionTypeDTO>();
 
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
-
             string commandText = "SELECT * FROM [dbo].[QuestionTypes]";
 
             using (SqlDataReader reader = CommandHelper.ExecuteReader(connectionString, commandText, CommandType.Text))
@@ -91,7 +87,6 @@ namespace DataAccess.Implementation.ADO
             QuestionTypeDTO item = new QuestionTypeDTO();
 
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
-
             string commandText = "SELECT * FROM [dbo].[QuestionTypes] WHERE [QuestionTypeId] = @entityId";
 
             SqlParameter parameter = new SqlParameter("@entityId", entityId);
@@ -118,17 +113,13 @@ namespace DataAccess.Implementation.ADO
         public void Update(QuestionTypeDTO entity)
         {
             int entityId = entity.QuestionTypeId;
-
             string description = "Gay";
-
             SqlParameter[] parameter = new SqlParameter[2];
 
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
-            
             string commandText = "UPDATE [dbo].[QuestionTypes] SET [Description] = @Description WHERE [QuestionTypeId] = @entityId";
 
             parameter[0] = new SqlParameter("@Description", description);
-
             parameter[1] = new SqlParameter("@entityId", entityId);
 
             int count = CommandHelper.ExecuteNonQuery(connectionString, commandText, CommandType.Text, parameter);

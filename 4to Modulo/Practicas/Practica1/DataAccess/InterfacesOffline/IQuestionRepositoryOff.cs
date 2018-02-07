@@ -1,9 +1,9 @@
 ﻿using DataAccess.DTO;
 using System.Collections.Generic;
 
-namespace DataAccess.Interfaces
+namespace DataAccess.InterfacesOffline
 {
-    public interface IQuestionRepository
+    public interface IQuestionRepositoryOff
     {
         List<QuestionDTO> GetAll();
 
