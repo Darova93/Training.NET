@@ -130,5 +130,59 @@ namespace DataAccess.Implementation
 
             Console.WriteLine("Items modified: {0}", count);
         }
+
+        public static void TransactionTest(QuestionDTO entity)
+        {
+            string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
+            int questionTypeId = 100;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                // Start a local transaction.
+                SqlTransaction sqlTran = connection.BeginTransaction();
+
+                // Enlist a command in the current transaction.
+                SqlCommand command = new SqlCommand();// connection.CreateCommand();
+                command.Transaction = sqlTran;
+                command.Connection = connection;
+
+                try
+                {
+                    command.CommandText =
+                     "INSERT INTO [dbo].[Question] ([Text], [QuestionTypeID]) VALUES.(@text, @questionTypeId";
+
+                    command.Parameters.Add("@text", SqlDbType.VarChar, 200).Value = entity.Text;
+                    command.Parameters.Add("@questionTypeId", SqlDbType.Int).Value = questionTypeId;
+
+                    command.ExecuteNonQuery();
+
+                    // Commit the transaction.
+                    sqlTran.Commit();
+                    Console.WriteLine("Both records were written to database.");
+                }
+                catch (Exception ex)
+                {
+                    // Handle the exception if the transaction fails to commit.
+                    Console.WriteLine(ex.Message);
+
+                    try
+                    {
+                        // Attempt to roll back the transaction.
+                        sqlTran.Rollback();
+                    }
+                    catch (Exception exRollback)
+                    {
+                        Console.WriteLine(exRollback.Message);
+                    }
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+        }
+
     }
 }

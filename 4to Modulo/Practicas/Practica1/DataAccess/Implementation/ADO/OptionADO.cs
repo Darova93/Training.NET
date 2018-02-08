@@ -124,5 +124,6 @@ namespace DataAccess.Implementation.ADO
 
             Console.WriteLine("Items modified: {0}", count);
         }
+        
     }
 }

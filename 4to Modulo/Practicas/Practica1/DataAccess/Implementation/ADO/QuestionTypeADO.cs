@@ -77,9 +77,7 @@ namespace DataAccess.Implementation.ADO
                     Console.WriteLine("No rows found");
                 }
             }
-
             return results;
-
         }
 
         public QuestionTypeDTO GetById(int entityId)
@@ -112,15 +110,13 @@ namespace DataAccess.Implementation.ADO
 
         public void Update(QuestionTypeDTO entity)
         {
-            int entityId = entity.QuestionTypeId;
-            string description = "Gay";
             SqlParameter[] parameter = new SqlParameter[2];
 
             string connectionString = ConnectionStringHelper.GetConnStringFromConfigFile();
             string commandText = "UPDATE [dbo].[QuestionTypes] SET [Description] = @Description WHERE [QuestionTypeId] = @entityId";
 
-            parameter[0] = new SqlParameter("@Description", description);
-            parameter[1] = new SqlParameter("@entityId", entityId);
+            parameter[0] = new SqlParameter("@Description", entity.Description);
+            parameter[1] = new SqlParameter("@entityId", entity.QuestionTypeId);
 
             int count = CommandHelper.ExecuteNonQuery(connectionString, commandText, CommandType.Text, parameter);
 

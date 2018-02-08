@@ -18,8 +18,6 @@ namespace Practica1
             IOptionRepository optionRepository = new OptionADO();
             IAnswerRepository answerRepository = new AnswerADO();
 
-            IQuestionRepositoryOff questionRepositoryOff = new QuestionADOOff();
-
             //DEMO 1
             //ConnectionStringHelper.OpenSqlConnectionInCode();
 
@@ -68,8 +66,8 @@ namespace Practica1
             //    Console.WriteLine("{0} {1} {2}", question.QuestionId, question.Text, question.QuestionTypeId);
             //}
 
-            QuestionADOOff adoOff = new QuestionADOOff();
-            adoOff.OptionsByQuestionId(4);
+            SPOptionADO spado = new SPOptionADO();
+            spado.OptionsByQuestionId(4);
 
             Console.ReadKey();
         }

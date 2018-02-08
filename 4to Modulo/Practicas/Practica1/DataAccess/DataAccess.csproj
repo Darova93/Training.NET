@@ -45,22 +45,21 @@
     <Compile Include="DTO\QuestionDTO.cs" />
     <Compile Include="DTO\QuestionTypeDTO.cs" />
     <Compile Include="DTO\AnswerDTO.cs" />
-    <Compile Include="ImplementationOffline\QuestionADOOff.cs" />
+    <Compile Include="Implementation\ADOOff\QuestionADOOff.cs" />
     <Compile Include="Implementation\ADO\AnswerADO.cs" />
+    <Compile Include="Implementation\ADO\SPOptionADO.cs" />
     <Compile Include="Implementation\ADO\OptionADO.cs" />
+    <Compile Include="Implementation\ADO\SPQuestionADO.cs" />
     <Compile Include="Implementation\ADO\QuestionTypeADO.cs" />
     <Compile Include="Implementation\Helpers\CommandHelper.cs" />
     <Compile Include="Implementation\Helpers\ConnectionStringHelper.cs" />
     <Compile Include="Implementation\ADO\QuestionADO.cs" />
-    <Compile Include="InterfacesOffline\IQuestionRepositoryOff.cs" />
     <Compile Include="Interfaces\IAnswerRepository.cs" />
     <Compile Include="Interfaces\IOptionRepository.cs" />
     <Compile Include="Interfaces\IQuestionRepository.cs" />
     <Compile Include="Interfaces\IQuestionTypeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Implementation\StoredProcedures\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
