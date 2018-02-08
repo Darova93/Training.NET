@@ -41,10 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTO\OptionDTO.cs" />
-    <Compile Include="DTO\QuestionDTO.cs" />
-    <Compile Include="DTO\QuestionTypeDTO.cs" />
-    <Compile Include="DTO\AnswerDTO.cs" />
     <Compile Include="Implementation\ADOOff\QuestionADOOff.cs" />
     <Compile Include="Implementation\ADO\AnswerADO.cs" />
     <Compile Include="Implementation\ADO\SPOptionADO.cs" />
@@ -54,12 +50,17 @@
     <Compile Include="Implementation\Helpers\CommandHelper.cs" />
     <Compile Include="Implementation\Helpers\ConnectionStringHelper.cs" />
     <Compile Include="Implementation\ADO\QuestionADO.cs" />
-    <Compile Include="Interfaces\IAnswerRepository.cs" />
-    <Compile Include="Interfaces\IOptionRepository.cs" />
-    <Compile Include="Interfaces\IQuestionRepository.cs" />
-    <Compile Include="Interfaces\IQuestionTypeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\DTO\DTO.csproj">
+      <Project>{65ac009f-9b60-418c-96f0-7298ddd26115}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{7cda0841-46a3-4c20-8d3c-c6ccc5264548}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

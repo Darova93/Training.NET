@@ -1,0 +1,11 @@
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\bin\Debug\DataAccessEF.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\bin\Debug\DataAccessEF.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\bin\Debug\DataAccessEF.pdb
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\bin\Debug\EntityFramework.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\bin\Debug\EntityFramework.xml
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\obj\Debug\DataAccessEF.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\obj\Debug\DataAccessEF.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\obj\Debug\DataAccessEF.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\obj\Debug\DataAccessEF.pdb

@@ -1,0 +1,8 @@
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\Interfaces\bin\Debug\DTO.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\Interfaces\bin\Debug\DTO.pdb
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\Interfaces\obj\Debug\Interfaces.pdb

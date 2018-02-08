@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
-using DataAccess.DTO;
-using DataAccess.Interfaces;
-using DataAccess.Implementation.Helpers;
-using System.Data.SqlClient;
-using System.Data;
+﻿using DataAccess.Implementation.Helpers;
+using DTO.DTO;
+using Interfaces.Interfaces;
 using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace DataAccess.ImplementationOffline
 {

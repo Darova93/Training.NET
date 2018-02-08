@@ -10,3 +10,7 @@ E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\DataAcces
 E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
 E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\DataAccess\obj\Debug\DataAccess.dll
 E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccess\bin\Debug\DTO.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccess\bin\Debug\Interfaces.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccess\bin\Debug\DTO.pdb
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccess\bin\Debug\Interfaces.pdb

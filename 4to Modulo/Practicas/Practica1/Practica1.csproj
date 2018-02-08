@@ -32,7 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,11 +55,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{65ac009f-9b60-418c-96f0-7298ddd26115}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="DataAccessEF\DataAccessEF.csproj">
+      <Project>{88A7C881-FE1C-4690-A39E-A5C0F65F21BB}</Project>
+      <Name>DataAccessEF</Name>
+    </ProjectReference>
     <ProjectReference Include="DataAccess\DataAccess.csproj">
       <Project>{44095ad4-eaf4-4a8e-aae4-c308bf87c565}</Project>
       <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="Interfaces\Interfaces.csproj">
+      <Project>{7cda0841-46a3-4c20-8d3c-c6ccc5264548}</Project>
+      <Name>Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

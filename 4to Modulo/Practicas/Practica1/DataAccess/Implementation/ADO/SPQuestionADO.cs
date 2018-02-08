@@ -1,10 +1,10 @@
-﻿using System;
+﻿using DataAccess.Implementation.Helpers;
+using DTO.DTO;
+using Interfaces.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using DataAccess.DTO;
-using DataAccess.Implementation.Helpers;
-using DataAccess.Interfaces;
 
 namespace DataAccess.Implementation
 {

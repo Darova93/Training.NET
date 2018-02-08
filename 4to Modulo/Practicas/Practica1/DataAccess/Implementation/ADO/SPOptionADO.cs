@@ -1,6 +1,6 @@
-﻿using DataAccess.DTO;
-using DataAccess.Implementation.Helpers;
-using DataAccess.Interfaces;
+﻿using DataAccess.Implementation.Helpers;
+using DTO.DTO;
+using Interfaces.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -51,10 +51,10 @@ namespace DataAccess.Implementation.ADO
             SqlCommand command = new SqlCommand("dbo.uspGetOptionsbyQuestionId", connstringobj);
             command.CommandType = CommandType.StoredProcedure;
             command.Parameters.Add("@Id", SqlDbType.Int).Value = entityId;
-            SqlDataReader reader = command.ExecuteReader();
+            
 
             connstringobj.Open();
-
+            SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
                 optionlist.Add(new OptionDTO

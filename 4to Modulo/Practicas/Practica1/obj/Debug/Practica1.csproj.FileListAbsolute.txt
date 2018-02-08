@@ -16,3 +16,14 @@ E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\obj\Debug
 E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\obj\Debug\Practica1.csproj.CoreCompileInputs.cache
 E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\obj\Debug\Practica1.exe
 E:\Archivos\Softtek\Academia\Repository\4to Modulo\Practicas\Practica1\obj\Debug\Practica1.pdb
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\DTO.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\Interfaces.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\DTO.pdb
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\Interfaces.pdb
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\DataAccessEF.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\EntityFramework.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\DataAccessEF.pdb
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\DataAccessEF.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\EntityFramework.xml
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\bin\Debug\EntityFramework.SqlServer.xml

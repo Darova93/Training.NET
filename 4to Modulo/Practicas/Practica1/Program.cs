@@ -1,11 +1,8 @@
-﻿using DataAccess.DTO;
-using DataAccess.Implementation;
-using DataAccess.Implementation.ADO;
-using DataAccess.ImplementationOffline;
-using DataAccess.Interfaces;
-using DataAccess.InterfacesOffline;
+﻿using DataAccess.Implementation.ADO;
+using DataAccessEF;
+using DataAccessEF.Entities;
+using Interfaces.Interfaces;
 using System;
-using System.Collections.Generic;
 
 namespace Practica1
 {
@@ -66,10 +63,29 @@ namespace Practica1
             //    Console.WriteLine("{0} {1} {2}", question.QuestionId, question.Text, question.QuestionTypeId);
             //}
 
-            SPOptionADO spado = new SPOptionADO();
-            spado.OptionsByQuestionId(4);
+            //SPOptionADO spado = new SPOptionADO();
+            //spado.OptionsByQuestionId(4);
 
-            Console.ReadKey();
+            /////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////****ENTITY FRAMEWORK****///////////////////////////////////////////////////
+            /////////////////////////////////////////////////////////////////////////////////////////////
+
+            //using(var context = new DemoContext())
+            //{
+            //    context.QuestionTypes.Add(new QuestionType { Description = "Si/No" });
+            //    context.QuestionTypes.Add(new QuestionType { Description = "Abierta" });
+            //    context.QuestionTypes.Add(new QuestionType { Description = "Opcion Multiple" });
+            //    context.QuestionTypes.Add(new QuestionType { Description = "Test Question" });
+            //    context.SaveChanges();
+            //}
+
+            using (var context = new DemoContext())
+            {
+                context.QuestionTypes.Add(new QuestionType { Description = "Para que corra" });
+                context.SaveChanges();
+            }
+
+                Console.ReadKey();
         }
     }
 }
