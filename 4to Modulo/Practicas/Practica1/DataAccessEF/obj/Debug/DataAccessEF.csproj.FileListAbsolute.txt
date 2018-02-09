@@ -9,3 +9,7 @@ C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\Data
 C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\obj\Debug\DataAccessEF.csproj.CoreCompileInputs.cache
 C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\obj\Debug\DataAccessEF.dll
 C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\obj\Debug\DataAccessEF.pdb
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\bin\Debug\DTO.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\bin\Debug\Interfaces.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\bin\Debug\DTO.pdb
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\bin\Debug\Interfaces.pdb

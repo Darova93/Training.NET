@@ -47,16 +47,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configurations\OptionConfiguration.cs" />
+    <Compile Include="Configurations\QuestionConfiguration.cs" />
+    <Compile Include="Configurations\QuestionTypeConfiguration.cs" />
     <Compile Include="DemoContext.cs" />
     <Compile Include="DemoInitializer.cs" />
     <Compile Include="Entities\Option.cs" />
     <Compile Include="Entities\Question.cs" />
     <Compile Include="Entities\QuestionType.cs" />
+    <Compile Include="Helpers\DataConverter.cs" />
+    <Compile Include="Implementation\QuestionTypeEF.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DTO\DTO.csproj">
+      <Project>{65AC009F-9B60-418C-96F0-7298DDD26115}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{7CDA0841-46A3-4C20-8D3C-C6CCC5264548}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

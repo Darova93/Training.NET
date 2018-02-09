@@ -1,4 +1,5 @@
-﻿using DataAccessEF.Entities;
+﻿using DataAccessEF.Configurations;
+using DataAccessEF.Entities;
 using System.Data.Entity;
 
 namespace DataAccessEF
@@ -16,5 +17,12 @@ namespace DataAccessEF
         public DbSet<QuestionType> QuestionTypes { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<Option> Options { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new QuestionConfiguration());
+            modelBuilder.Configurations.Add(new OptionConfiguration());
+            modelBuilder.Configurations.Add(new QuestionTypeConfiguration());
+        }
     }
 }

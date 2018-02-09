@@ -1,6 +1,8 @@
 ﻿using DataAccess.Implementation.ADO;
 using DataAccessEF;
 using DataAccessEF.Entities;
+using DataAccessEF.Implementation;
+using DTO.DTO;
 using Interfaces.Interfaces;
 using System;
 
@@ -10,10 +12,10 @@ namespace Practica1
     {
         static void Main(string[] args)
         {
-            IQuestionTypeRepository questionTypeRepository = new QuestionTypeADO();
-            IQuestionRepository questionRepository = new QuestionADO();
-            IOptionRepository optionRepository = new OptionADO();
-            IAnswerRepository answerRepository = new AnswerADO();
+            //IQuestionTypeRepository questionTypeRepository = new QuestionTypeADO();
+            //IQuestionRepository questionRepository = new QuestionADO();
+            //IOptionRepository optionRepository = new OptionADO();
+            //IAnswerRepository answerRepository = new AnswerADO();
 
             //DEMO 1
             //ConnectionStringHelper.OpenSqlConnectionInCode();
@@ -79,13 +81,27 @@ namespace Practica1
             //    context.SaveChanges();
             //}
 
-            using (var context = new DemoContext())
+            //using (var context = new DemoContext())
+            //{
+            //    context.QuestionTypes.Add(new QuestionType { Description = "Para que corra" });
+            //    context.SaveChanges();
+            //}
+
+            IQuestionTypeRepository questionTypeRepository = new QuestionTypeEF();
+
+            questionTypeRepository.Add(new QuestionTypeDTO { Description = "Paquecorra" });
+
+            questionTypeRepository.Update(new QuestionTypeDTO { Description = "Ya corrio", QuestionTypeId = 4 });
+
+            questionTypeRepository.Delete(5);
+
+            var results = questionTypeRepository.GetAll();
+            foreach(QuestionTypeDTO qtype in results)
             {
-                context.QuestionTypes.Add(new QuestionType { Description = "Para que corra" });
-                context.SaveChanges();
+                Console.WriteLine($"{qtype.QuestionTypeId} { qtype.Description}");
             }
 
-                Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }
