@@ -10,7 +10,8 @@ namespace DataAccessEF.Helpers
             return new QuestionType
             {
                 QuestionTypeId = dtoObject.QuestionTypeId,
-                Description = dtoObject.Description
+                Description = dtoObject.Description,
+                CreateDate = dtoObject.CreateDate
             };
         }
 
@@ -19,7 +20,8 @@ namespace DataAccessEF.Helpers
             return new QuestionTypeDTO
             {
                 QuestionTypeId = entityObject.QuestionTypeId,
-                Description = entityObject.Description
+                Description = entityObject.Description,
+                CreateDate = entityObject.CreateDate
             };
         }
 
@@ -30,6 +32,10 @@ namespace DataAccessEF.Helpers
                 QuestionId = entityObject.QuestionId,
                 Text = entityObject.Text,
                 QuestionTypeId = entityObject.QuestionTypeId,
+                IsActive = entityObject.IsActive,
+                IsRequired = entityObject.IsRequired,
+                CreateDate = entityObject.CreateDate,
+                ModifiedDate = entityObject.ModifiedDate
             };
         }
 
@@ -40,15 +46,21 @@ namespace DataAccessEF.Helpers
                 QuestionId = DTOObject.QuestionId,
                 Text = DTOObject.Text,
                 QuestionTypeId = DTOObject.QuestionTypeId,
+                IsActive = DTOObject.IsActive,
+                IsRequired = DTOObject.IsRequired,
+                CreateDate = DTOObject.CreateDate,
+                ModifiedDate = DTOObject.ModifiedDate
             };
         }
 
-        public static Option OptionDTOToEntity(Option DTOObject)
+        public static Option OptionDTOToEntity(OptionDTO DTOObject)
         {
             return new Option
             {
                 OptionId = DTOObject.OptionId,
-                Text = DTOObject.Text
+                Text = DTOObject.Text,
+                CreateDate = DTOObject.CreateDate,
+                ModifiedDate = DTOObject.ModifiedDate
             };
         }
 
@@ -57,7 +69,9 @@ namespace DataAccessEF.Helpers
             return new OptionDTO
             {
                 OptionId = entityObject.OptionId,
-                Text = entityObject.Text
+                Text = entityObject.Text,
+                CreateDate = entityObject.CreateDate,
+                ModifiedDate = entityObject.ModifiedDate
             };
         }
     }

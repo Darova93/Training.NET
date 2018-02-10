@@ -8,10 +8,6 @@ namespace DataAccessEF.Configurations
         public QuestionTypeConfiguration()
         {
             this.ToTable("QuestionTypes");
-
-            this.HasKey(p => p.QuestionTypeId);
-
-            this.Property(p => p.Description).HasMaxLength(200).IsRequired();
         }
     }
 }

@@ -17,6 +17,8 @@ namespace DataAccessEF.Configurations
 
             this.Property(p => p.IsRequired).IsRequired();
 
+            this.Property(p => p.ModifiedDate).IsOptional();
+
             this.HasMany<Option>(op => op.Option)
                 .WithMany(q => q.Questions)
                 .Map(qo =>

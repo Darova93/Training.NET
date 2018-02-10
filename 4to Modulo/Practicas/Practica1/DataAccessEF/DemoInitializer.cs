@@ -1,4 +1,5 @@
 ﻿using DataAccessEF.Entities;
+using System;
 using System.Data.Entity;
 
 namespace DataAccessEF

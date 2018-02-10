@@ -13,3 +13,9 @@ C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\Data
 C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\bin\Debug\Interfaces.dll
 C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\bin\Debug\DTO.pdb
 C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\bin\Debug\Interfaces.pdb
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\obj\Debug\DataAccessEF.Migrations.InitialCreate.resources
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\obj\Debug\DataAccessEF.csproj.GenerateResource.Cache
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\obj\Debug\DataAccessEF.Migrations.CreateDateQuestionTypes.resources
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\obj\Debug\DataAccessEF.Migrations.CreateDateQuestionOption.resources
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\obj\Debug\DataAccessEF.Migrations.ModifiedDateQuestionOptions.resources
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica1\DataAccessEF\obj\Debug\DataAccessEF.Migrations.ModifiedDateOptional.resources

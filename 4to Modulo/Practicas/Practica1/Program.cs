@@ -88,18 +88,45 @@ namespace Practica1
             //}
 
             IQuestionTypeRepository questionTypeRepository = new QuestionTypeEF();
+            IQuestionRepository questionRepository = new QuestionEF();
+            IOptionRepository optionRepository = new OptionEF();
 
-            questionTypeRepository.Add(new QuestionTypeDTO { Description = "Paquecorra" });
+            //questionTypeRepository.Add(new QuestionTypeDTO { Description = "Paquecorra", CreateDate = DateTime.Now });
+            //questionTypeRepository.Update(new QuestionTypeDTO { Description = "Ya corrio!", QuestionTypeId = 9 });
+            //questionTypeRepository.Delete(8);
 
-            questionTypeRepository.Update(new QuestionTypeDTO { Description = "Ya corrio", QuestionTypeId = 4 });
+            //questionRepository.Add(new QuestionDTO { Text = "Que tal?", QuestionTypeId = 1, IsActive = false, IsRequired = true });
+            //questionRepository.Update(new QuestionDTO { QuestionId = 9, Text = "Donde llueve cafe?" });
+            //questionRepository.Delete(11);
 
-            questionTypeRepository.Delete(5);
+            //optionRepository.Add(new OptionDTO { Text = "En el campo" });
+            //optionRepository.Update(new OptionDTO { OptionId = 9, Text = "Mexico" });
 
-            var results = questionTypeRepository.GetAll();
-            foreach(QuestionTypeDTO qtype in results)
-            {
-                Console.WriteLine($"{qtype.QuestionTypeId} { qtype.Description}");
-            }
+            var question = questionRepository.GetById(1);
+            var options = question.Option;
+            
+            Console.WriteLine($"{question.Text} \n {}");
+
+            //Console.WriteLine("Question Types");
+            //var resultqtype = questionTypeRepository.GetAll();
+            //foreach(QuestionTypeDTO qtype in resultqtype)
+            //{
+            //    Console.WriteLine($"{qtype.QuestionTypeId} { qtype.Description}");
+            //}
+
+            //Console.WriteLine("\n Questions");
+            //var resultqu = questionRepository.GetAll();
+            //foreach (QuestionDTO qtype in resultqu)
+            //{
+            //    Console.WriteLine($"{qtype.QuestionId} {qtype.Text} {qtype.QuestionTypeId}");
+            //}
+
+            //Console.WriteLine("\n Options");
+            //var resultop = optionRepository.GetAll();
+            //foreach (OptionDTO qtype in resultop)
+            //{
+            //    Console.WriteLine($"{qtype.OptionId} { qtype.Text}");
+            //}
 
             Console.ReadKey();
         }

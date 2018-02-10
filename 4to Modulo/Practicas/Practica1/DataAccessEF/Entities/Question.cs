@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccessEF.Entities
@@ -15,6 +16,10 @@ namespace DataAccessEF.Entities
         public bool IsActive { get; set; }
 
         public bool IsRequired { get; set; }
+
+        public DateTime CreateDate { get; set; }
+
+        public DateTime? ModifiedDate { get; set; }
 
         public virtual QuestionType QuestionType { get; set; }
 

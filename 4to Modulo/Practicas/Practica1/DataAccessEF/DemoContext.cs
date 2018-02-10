@@ -10,8 +10,9 @@ namespace DataAccessEF
         {
             //Database.SetInitializer<DemoContext>(new DropCreateDatabaseIfModelChanges<DemoContext>());
             //Database.SetInitializer<DemoContext>(new DropCreateDatabaseAlways<DemoContext>());
+            //Database.SetInitializer<DemoContext>(new DemoInitializer());
 
-            Database.SetInitializer<DemoContext>(new DemoInitializer());
+            Database.SetInitializer<DemoContext>(new MigrateDatabaseToLatestVersion<DemoContext, Migrations.Configuration>());
         }
 
         public DbSet<QuestionType> QuestionTypes { get; set; }

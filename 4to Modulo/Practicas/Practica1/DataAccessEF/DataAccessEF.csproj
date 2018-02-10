@@ -56,7 +56,30 @@
     <Compile Include="Entities\Question.cs" />
     <Compile Include="Entities\QuestionType.cs" />
     <Compile Include="Helpers\DataConverter.cs" />
+    <Compile Include="Implementation\OptionEF.cs" />
+    <Compile Include="Implementation\QuestionEF.cs" />
     <Compile Include="Implementation\QuestionTypeEF.cs" />
+    <Compile Include="Migrations\201802100130442_InitialCreate.cs" />
+    <Compile Include="Migrations\201802100130442_InitialCreate.Designer.cs">
+      <DependentUpon>201802100130442_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802100155527_CreateDateQuestionTypes.cs" />
+    <Compile Include="Migrations\201802100155527_CreateDateQuestionTypes.Designer.cs">
+      <DependentUpon>201802100155527_CreateDateQuestionTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802100215390_CreateDateQuestionOption.cs" />
+    <Compile Include="Migrations\201802100215390_CreateDateQuestionOption.Designer.cs">
+      <DependentUpon>201802100215390_CreateDateQuestionOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802100227058_ModifiedDateQuestionOptions.cs" />
+    <Compile Include="Migrations\201802100227058_ModifiedDateQuestionOptions.Designer.cs">
+      <DependentUpon>201802100227058_ModifiedDateQuestionOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802100241496_ModifiedDateOptional.cs" />
+    <Compile Include="Migrations\201802100241496_ModifiedDateOptional.Designer.cs">
+      <DependentUpon>201802100241496_ModifiedDateOptional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +95,23 @@
       <Project>{7CDA0841-46A3-4C20-8D3C-C6CCC5264548}</Project>
       <Name>Interfaces</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201802100130442_InitialCreate.resx">
+      <DependentUpon>201802100130442_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802100155527_CreateDateQuestionTypes.resx">
+      <DependentUpon>201802100155527_CreateDateQuestionTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802100215390_CreateDateQuestionOption.resx">
+      <DependentUpon>201802100215390_CreateDateQuestionOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802100227058_ModifiedDateQuestionOptions.resx">
+      <DependentUpon>201802100227058_ModifiedDateQuestionOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802100241496_ModifiedDateOptional.resx">
+      <DependentUpon>201802100241496_ModifiedDateOptional.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

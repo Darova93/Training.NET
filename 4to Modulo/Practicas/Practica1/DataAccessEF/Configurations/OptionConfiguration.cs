@@ -12,6 +12,8 @@ namespace DataAccessEF.Configurations
             this.HasKey(p => p.OptionId);
 
             this.Property(p => p.Text).HasMaxLength(200).IsRequired();
+
+            this.Property(p => p.ModifiedDate).IsOptional();
         }
     }
 }

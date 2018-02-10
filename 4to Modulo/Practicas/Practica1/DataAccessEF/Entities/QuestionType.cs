@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -15,5 +15,7 @@ namespace DataAccessEF.Entities
         [MaxLength(200)]
         [Required]
         public string Description { get; set; }
+
+        public DateTime CreateDate { get; set; }
     }
 }
