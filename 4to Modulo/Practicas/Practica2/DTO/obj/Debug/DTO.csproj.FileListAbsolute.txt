@@ -1,0 +1,6 @@
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica2\DTO\bin\Debug\DTO.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica2\DTO\bin\Debug\DTO.pdb
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica2\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica2\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica2\DTO\obj\Debug\DTO.dll
+C:\Users\Academia\Documents\david_rodriguezv\4to Modulo\Practicas\Practica2\DTO\obj\Debug\DTO.pdb
