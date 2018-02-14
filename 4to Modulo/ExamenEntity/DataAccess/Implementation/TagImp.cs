@@ -32,7 +32,7 @@ namespace DataAccess.Implementation
                 TagEF tagtoadd = context.Tags.Find(tagid);
                 TaskEF task = context.Tasks.Find(taskid);
 
-                if ((tagtoadd!=null) && (CountTags(taskid) < 10))
+                if ((tagtoadd!=null) && (CountTags(taskid) < 10) && (tagtoadd.IsArchived==false))
                 {
                     task.Tags.Add(tagtoadd);
                     tagtoadd.Tasks.Add(task);
