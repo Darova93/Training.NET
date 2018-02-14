@@ -134,6 +134,7 @@ namespace DataAccess.Implementation
                 {
                     list.Add(DataConverter.ConvertTaskEntitytoDTO(task));
                 }
+                list.Select(p => p.IsArchived == false);
             }
             return list;
         }
@@ -143,7 +144,7 @@ namespace DataAccess.Implementation
             List<TaskDTO> list = new List<TaskDTO>();
             using (var context = new DemoContext())
             {
-                context.Tasks.OrderByDescending(p => p.Status);
+                context.Tasks.OrderByDescending(p => p.Status).Where(p => p.IsArchived == false);
                 foreach (TaskEF task in context.Tasks)
                 {
                     list.Add(DataConverter.ConvertTaskEntitytoDTO(task));
@@ -157,7 +158,7 @@ namespace DataAccess.Implementation
             List<TaskDTO> list = new List<TaskDTO>();
             using (var context = new DemoContext())
             {
-                context.Tasks.OrderByDescending(p => p.Title);
+                context.Tasks.OrderByDescending(p => p.Title).Where(p => p.IsArchived == false);
                 foreach (TaskEF task in context.Tasks)
                 {
                     list.Add(DataConverter.ConvertTaskEntitytoDTO(task));
@@ -171,7 +172,7 @@ namespace DataAccess.Implementation
             List<TaskDTO> list = new List<TaskDTO>();
             using (var context = new DemoContext())
             {
-                context.Tasks.OrderByDescending(p => p.Priority);
+                context.Tasks.OrderByDescending(p => p.Priority).Where(p => p.IsArchived == false);
                 foreach (TaskEF task in context.Tasks)
                 {
                     list.Add(DataConverter.ConvertTaskEntitytoDTO(task));

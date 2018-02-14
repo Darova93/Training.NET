@@ -65,7 +65,7 @@ namespace DataAccess.Implementation
                 var tag = context.Tags.Find(tagid);
                 if (tag != null)
                 {
-                    return tag.Tasks.Count;
+                    return tag.Tasks.Count(q=>q.IsArchived==false);
                 }
                 else
                 {
@@ -82,7 +82,7 @@ namespace DataAccess.Implementation
                 var task = context.Tasks.Find(taskid);
                 if (task != null)
                 {
-                    return task.Tags.Count;
+                    return task.Tags.Count(q => q.IsArchived == false);
                 }
                 else
                 {
