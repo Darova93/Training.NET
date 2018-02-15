@@ -1,0 +1,10 @@
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Domain.Business\bin\Debug\Softtek.Academy2018.Demo.Business.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Domain.Business\bin\Debug\Softtek.Academy2018.Demo.Business.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Domain.Business\bin\Debug\Softtek.Academy2018.Demo.Data.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Domain.Business\bin\Debug\Softtek.Academy2018.Demo.Domain.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Domain.Business\bin\Debug\Softtek.Academy2018.Demo.Domain.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Domain.Business\bin\Debug\Softtek.Academy2018.Demo.Data.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Domain.Business\obj\Debug\Softtek.Academy2018.Demo.Business.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Domain.Business\obj\Debug\Softtek.Academy2018.Demo.Business.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Domain.Business\obj\Debug\Softtek.Academy2018.Demo.Business.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Domain.Business\obj\Debug\Softtek.Academy2018.Demo.Business.pdb

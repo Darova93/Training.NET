@@ -1,0 +1,13 @@
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Console\obj\Debug\Softtek.Academy2018.Demo.Console.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Console\obj\Debug\Softtek.Academy2018.Demo.Console.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Console.exe.config
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Console.exe
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Console.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Business.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Data.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Domain.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Domain.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Business.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Data.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Console\obj\Debug\Softtek.Academy2018.Demo.Console.exe
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement\Softtek.Academy2018.Demo.Console\obj\Debug\Softtek.Academy2018.Demo.Console.pdb

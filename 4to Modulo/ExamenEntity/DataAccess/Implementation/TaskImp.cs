@@ -158,7 +158,7 @@ namespace DataAccess.Implementation
             List<TaskDTO> list = new List<TaskDTO>();
             using (var context = new DemoContext())
             {
-                context.Tasks.OrderByDescending(p => p.Title).Where(p => p.IsArchived == false);
+                context.Tasks.OrderByDescending(p => p.Title);
                 foreach (TaskEF task in context.Tasks)
                 {
                     list.Add(DataConverter.ConvertTaskEntitytoDTO(task));
