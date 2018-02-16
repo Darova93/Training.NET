@@ -18,3 +18,25 @@ C:\Users\Academia\Documents\ramos\Business_Labs\UserManagement_Demo\Softtek.Acad
 C:\Users\Academia\Documents\ramos\Business_Labs\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Business.dll.config
 C:\Users\Academia\Documents\ramos\Business_Labs\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Domain.dll.config
 C:\Users\Academia\Documents\ramos\Business_Labs\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Console.exe.config
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Console.exe
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Console.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\EntityFramework.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Ninject.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Business.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Data.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Domain.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Business.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Business.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Data.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Data.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Domain.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Softtek.Academy2018.Demo.Domain.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\EntityFramework.xml
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\bin\Debug\Ninject.xml
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\obj\Debug\Softtek.Academy2018.Demo.Console.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\obj\Debug\Softtek.Academy2018.Demo.Console.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\obj\Debug\Softtek.Academy2018.Demo.Console.exe
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Console\obj\Debug\Softtek.Academy2018.Demo.Console.pdb

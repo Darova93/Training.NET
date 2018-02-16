@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Context.cs" />
     <Compile Include="Contracts\IUserRepository.cs" />
+    <Compile Include="Implementation\UserDataRepository.cs" />
     <Compile Include="Implementation\UserFakeRepository.cs" />
     <Compile Include="Migrations\201802160228455_InitialCreate.cs" />
     <Compile Include="Migrations\201802160228455_InitialCreate.Designer.cs">

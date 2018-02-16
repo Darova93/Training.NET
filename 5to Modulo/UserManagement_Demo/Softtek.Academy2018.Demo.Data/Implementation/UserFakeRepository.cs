@@ -1,5 +1,4 @@
 ﻿using Softtek.Academy2018.Demo.Data.Contracts;
-using Softtek.Academy2018.Demo.Data;
 using Softtek.Academy2018.Demo.Domain.Model;
 using System;
 using System.Collections.Generic;
@@ -11,80 +10,78 @@ namespace Softtek.Academy2018.Demo.Data.Implementation
 {
     public class UserFakeRepository : IUserRepository
     {
-        //private static List<User> _users = new List<User>();
+        private static List<User> _users = new List<User>();
 
         public int Add(User user)
         {
-            //int id = _users.Count + 1;
+            int id = _users.Count + 1;
 
-            //user.Id = id;
+            user.Id = id;
             user.CreatedDate = DateTime.Now;
             user.ModifiedDate = null;
             user.IsActive = true;
 
-            using (var context = new DBContext())
-            {
-                context.Users.Add(user);
-                context.SaveChanges();
-                var lastid = context.Users.OrderByDescending(e => e.Id).First().Id;
-                return lastid;
-            }
+            _users.Add(user);
+
+            return id;
         }
 
         public bool Delete(int id)
         {
+            User user = _users.SingleOrDefault(x => x.Id == id);
 
-            using (var context = new DBContext())
-            {
-                User user = context.Users.SingleOrDefault(x => x.Id == id);
+            if (user == null) return false;
 
-                if (user == null) return false;
-
-                context.Users.SingleOrDefault(x => x.Id == id).IsActive = false; 
-            }
+            user.IsActive = false;
 
             return true;
         }
 
         public bool Exist(string @is)
         {
-            using (var context = new DBContext())
-            {
-                return context.Users.Any(x => x.IS.ToLower() == @is.ToLower()); 
-            }
+            return _users.Any(x => x.IS.ToLower() == @is.ToLower());
         }
 
         public User Get(int id)
         {
-            using (var context = new DBContext())
+            User currentUser = _users.SingleOrDefault(x => x.Id == id && x.IsActive);
+
+            if (currentUser != null)
             {
-                return context.Users.SingleOrDefault(x => x.Id == id && x.IsActive);
-            } 
+                return new User
+                {
+                    Id = currentUser.Id,
+                    IS = currentUser.IS,
+                    FirstName = currentUser.FirstName,
+                    LastName = currentUser.LastName,
+                    DateOfBirth = currentUser.DateOfBirth,
+                    Salary = currentUser.Salary,
+                    IsActive = currentUser.IsActive,
+                    CreatedDate = currentUser.CreatedDate,
+                    ModifiedDate = currentUser.ModifiedDate
+                };
+            }
+
+            return null;
         }
 
         public string GetIS(int id)
         {
-            using (var context = new DBContext())
-            {
-                return context.Users.SingleOrDefault(x => x.Id == id).IS ?? null; 
-            }
+            return _users.SingleOrDefault(x => x.Id == id).IS ?? null;
         }
 
         public bool Update(User user)
         {
-            using (var context = new DBContext())
-            {
-                User currentUser = context.Users.SingleOrDefault(x => x.Id == user.Id);
+            User currentUser = _users.SingleOrDefault(x => x.Id == user.Id);
 
-                if (currentUser == null) return false;
+            if (currentUser == null) return false;
 
-                currentUser.IS = user.IS;
-                currentUser.FirstName = user.FirstName;
-                currentUser.LastName = user.LastName;
-                currentUser.DateOfBirth = user.DateOfBirth;
-                currentUser.Salary = user.Salary;
-                currentUser.ModifiedDate = DateTime.Now; 
-            }
+            currentUser.IS = user.IS;
+            currentUser.FirstName = user.FirstName;
+            currentUser.LastName = user.LastName;
+            currentUser.DateOfBirth = user.DateOfBirth;
+            currentUser.Salary = user.Salary;
+            currentUser.ModifiedDate = DateTime.Now;
 
             return true;
         }
