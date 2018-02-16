@@ -13,6 +13,8 @@ namespace Softtek.Academy2018.Demo.Data.Contracts
         User Get(int id);
         bool Update(User user);
         bool Delete(int id);
-        bool Exist(string iS);
+        int ISExist(string iS, int id);
+        bool isActive(int id);
+        bool userExists(int id);
     }
 }

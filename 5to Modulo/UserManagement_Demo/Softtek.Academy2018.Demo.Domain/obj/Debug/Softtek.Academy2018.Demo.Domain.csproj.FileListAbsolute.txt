@@ -1,0 +1,11 @@
+C:\Users\Academia\Documents\ramos\Business_Labs\UserManagement_Demo\Softtek.Academy2018.Demo.Domain\bin\Debug\Softtek.Academy2018.Demo.Domain.dll
+C:\Users\Academia\Documents\ramos\Business_Labs\UserManagement_Demo\Softtek.Academy2018.Demo.Domain\bin\Debug\Softtek.Academy2018.Demo.Domain.pdb
+C:\Users\Academia\Documents\ramos\Business_Labs\UserManagement_Demo\Softtek.Academy2018.Demo.Domain\obj\Debug\Softtek.Academy2018.Demo.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\ramos\Business_Labs\UserManagement_Demo\Softtek.Academy2018.Demo.Domain\obj\Debug\Softtek.Academy2018.Demo.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\ramos\Business_Labs\UserManagement_Demo\Softtek.Academy2018.Demo.Domain\obj\Debug\Softtek.Academy2018.Demo.Domain.dll
+C:\Users\Academia\Documents\ramos\Business_Labs\UserManagement_Demo\Softtek.Academy2018.Demo.Domain\obj\Debug\Softtek.Academy2018.Demo.Domain.pdb
+C:\Users\Academia\Documents\ramos\Business_Labs\UserManagement_Demo\Softtek.Academy2018.Demo.Domain\bin\Debug\Softtek.Academy2018.Demo.Domain.dll.config
+C:\Users\Academia\Documents\ramos\Business_Labs\UserManagement_Demo\Softtek.Academy2018.Demo.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Academia\Documents\ramos\Business_Labs\UserManagement_Demo\Softtek.Academy2018.Demo.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Academia\Documents\ramos\Business_Labs\UserManagement_Demo\Softtek.Academy2018.Demo.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Academia\Documents\ramos\Business_Labs\UserManagement_Demo\Softtek.Academy2018.Demo.Domain\bin\Debug\EntityFramework.SqlServer.xml

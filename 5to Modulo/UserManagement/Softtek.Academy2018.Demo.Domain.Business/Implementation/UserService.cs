@@ -16,8 +16,8 @@ namespace Softtek.Academy2018.Demo.Business.Implementation
 
         public int Add(User user)
         {
-            bool isExist = _userRepository.Exist(user.IS);
-            if (isExist) return 0;
+            int isExist = _userRepository.ISExist(user.IS, user.Id);
+            if (isExist == 1 || isExist == 2) return 0;
 
             if (string.IsNullOrEmpty(user.FirstName) || string.IsNullOrEmpty(user.LastName)) return 0;
 
@@ -33,17 +33,42 @@ namespace Softtek.Academy2018.Demo.Business.Implementation
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            bool userExists = _userRepository.userExists(id);
+            bool isActive = _userRepository.isActive(id);
+
+            if ((userExists) && (isActive)) return _userRepository.Delete(id);
+
+            return false;
         }
 
         public User Get(int id)
         {
-            throw new NotImplementedException();
+            bool userExists = _userRepository.userExists(id);
+            bool isActive = _userRepository.isActive(id);
+
+            if ((userExists) && (isActive)) return _userRepository.Get(id);
+
+            return null;
         }
 
         public bool Update(User user)
         {
-            throw new NotImplementedException();
+            bool userExists = _userRepository.userExists(user.Id);
+            if (!userExists) return false;
+
+            int isExist = _userRepository.ISExist(user.IS, user.Id);
+            if (isExist == 1) return false;
+
+            if (string.IsNullOrEmpty(user.FirstName) || string.IsNullOrEmpty(user.LastName)) return false;
+
+            if (!user.DateOfBirth.HasValue) return false;
+
+            bool validAge = DateTime.Now.Year - user.DateOfBirth.Value.Year < 18;
+            if (validAge) return false;
+
+            bool result = _userRepository.Update(user);
+
+            return true;
         }
     }
 }

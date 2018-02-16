@@ -23,22 +23,49 @@ namespace Softtek.Academy2018.Demo.Data.Implementation
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            _users.Remove(_users.Find(x=>x.Id == id));
+            return true;
         }
 
-        public bool Exist(string @is)
+        public int ISExist(string @is, int id)
         {
-            return _users.Any(x => x.IS.ToLower() == @is.ToLower());
+            User found = _users.FirstOrDefault(x => x.IS.ToLower() == @is.ToLower());
+            if ((found != null) && (found.Id != id))
+            {
+                return 1;
+            }
+            else if ((found != null) && (found.Id == id))
+            {
+                return 2;
+            }
+            return 0;
         }
-
+            
         public User Get(int id)
         {
-            throw new NotImplementedException();
+            return _users.Find(x => x.Id == id);
+        }
+
+        public bool isActive(int id)
+        {
+            return _users.SingleOrDefault(x => x.Id == id).IsActive;
         }
 
         public bool Update(User user)
         {
-            throw new NotImplementedException();
+            User olduser = new User();
+            olduser = _users.SingleOrDefault(i => i.Id == user.Id);
+            olduser = user;
+            return true;
+        }
+
+        public bool userExists(int id)
+        {
+            if (_users.SingleOrDefault(x => x.Id == id) != null)
+            {
+                return true;
+            }
+            else return false;
         }
     }
 }
