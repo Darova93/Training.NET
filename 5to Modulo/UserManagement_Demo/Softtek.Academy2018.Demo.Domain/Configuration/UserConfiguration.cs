@@ -14,6 +14,9 @@ namespace Softtek.Academy2018.Demo.Domain.Configuration
         {
             this.ToTable("Users");
             this.HasKey(p => p.Id);
+            this.Property(p => p.FirstName).IsRequired();
+            this.Property(p => p.LastName).IsRequired();
+            this.Property(p => p.CreatedDate).IsRequired();
         }
     }
 }

@@ -14,10 +14,12 @@ namespace Softtek.Academy2018.Demo.Console
         {
             IKernel kernel = FactoryDependency.GetKernel();
 
-            IUserService service = kernel.Get<IUserService>();
+            IUserService userservice = kernel.Get<IUserService>();
+            IProjectService projectservice = kernel.Get<IProjectService>();
 
             //Create workflow instance
-            UserWorkflow workflow = new UserWorkflow(service);
+            UserWorkflow userworkflow = new UserWorkflow(userservice);
+            ProjectWorkFlow projectworkflow = new ProjectWorkFlow(projectservice);
 
             bool exit = false;
 
@@ -28,6 +30,9 @@ namespace Softtek.Academy2018.Demo.Console
                 System.Console.WriteLine("[2] Read user");
                 System.Console.WriteLine("[3] Update user");
                 System.Console.WriteLine("[4] Delete user");
+                System.Console.WriteLine("[5] Create project");
+                System.Console.WriteLine("[6] Read projects");
+                System.Console.WriteLine("[7] Assign user to project");
                 System.Console.WriteLine("[0] Exit");
                 System.Console.Write("What do you want to do?:");
 
@@ -39,16 +44,25 @@ namespace Softtek.Academy2018.Demo.Console
                         exit = true;
                         break;
                     case "1":
-                        workflow.CreateUser();
+                        userworkflow.CreateUser();
                         break;
                     case "2":
-                        workflow.ReadUser();
+                        userworkflow.ReadUser();
                         break;
                     case "3":
-                        workflow.UpdateUser();
+                        userworkflow.UpdateUser();
                         break;
                     case "4":
-                        workflow.Delete();
+                        userworkflow.Delete();
+                        break;
+                    case "5":
+                        projectworkflow.CreateProject();
+                        break;
+                    case "6":
+                        projectworkflow.GetAll();
+                        break;
+                    case "7":
+                        projectworkflow.AssignUser();
                         break;
                 }
 

@@ -18,6 +18,7 @@ namespace Softtek.Academy2018.Demo.Data.Contracts
         bool Delete(int id);
 
         bool Exist(string @is);
+
         string GetIS(int id);
     }
 }

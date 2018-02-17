@@ -22,6 +22,10 @@ namespace Softtek.Academy2018.Demo.Console
             //kernel.Bind<IUserRepository>().To<UserFakeRepository>();
             kernel.Bind<IUserService>().To<UserService>();
 
+            kernel.Bind<IProjectRepository>().To<ProjectDataRepository>();
+            //kernel.Bind<IProjectRepository>().To<ProjectFakeRepository>();
+            kernel.Bind<IProjectService>().To<ProjectService>();
+
             return kernel;
         }
     }

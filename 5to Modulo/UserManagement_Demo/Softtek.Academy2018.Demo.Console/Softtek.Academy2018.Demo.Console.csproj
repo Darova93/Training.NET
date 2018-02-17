@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="FactoryDependency.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProjectWorkFlow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserWorkFlow.cs" />
   </ItemGroup>

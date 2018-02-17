@@ -32,3 +32,4 @@ C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Soft
 C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Data\obj\Debug\Softtek.Academy2018.Demo.Data.csproj.CoreCompileInputs.cache
 C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Data\obj\Debug\Softtek.Academy2018.Demo.Data.dll
 C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Data\obj\Debug\Softtek.Academy2018.Demo.Data.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Data\obj\Debug\Softtek.Academy2018.Demo.Data.Migrations.AddingProjects.resources
