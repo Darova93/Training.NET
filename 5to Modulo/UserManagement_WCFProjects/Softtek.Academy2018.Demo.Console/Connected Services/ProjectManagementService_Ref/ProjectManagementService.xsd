@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Softtek.Academy2018.Demo.WCF.Messages" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Softtek.Academy2018.Demo.WCF.Messages" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4001/ProjectManagementService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Softtek.Academy2018.Demo.WCF.DTO" />
+  <xs:complexType name="CreateProjectRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TechnologyStack" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CreateProjectRequest" nillable="true" type="tns:CreateProjectRequest" />
+  <xs:complexType name="BaseRequest">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="BaseRequest" nillable="true" type="tns:BaseRequest" />
+  <xs:complexType name="CreateProjectResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ProjectId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CreateProjectResponse" nillable="true" type="tns:CreateProjectResponse" />
+  <xs:complexType name="BaseResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseResponse" nillable="true" type="tns:BaseResponse" />
+  <xs:complexType name="GetProjectRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRequest">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProjectRequest" nillable="true" type="tns:GetProjectRequest" />
+  <xs:complexType name="GetProjectResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseResponse">
+        <xs:sequence>
+          <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Softtek.Academy2018.Demo.WCF.DTO" minOccurs="0" name="Projects" nillable="true" type="q1:ArrayOfProjectDTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProjectResponse" nillable="true" type="tns:GetProjectResponse" />
+</xs:schema>
