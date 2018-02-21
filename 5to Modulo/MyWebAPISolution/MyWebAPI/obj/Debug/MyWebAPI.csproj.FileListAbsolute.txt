@@ -1,0 +1,17 @@
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\bin\MyWebAPI.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\bin\MyWebAPI.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\bin\MyWebAPI.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\bin\Newtonsoft.Json.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\bin\System.Web.Http.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\bin\Newtonsoft.Json.xml
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\bin\System.Web.Http.xml
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\obj\Debug\MyWebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\obj\Debug\MyWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\obj\Debug\MyWebAPI.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MyWebAPISolution\MyWebAPI\obj\Debug\MyWebAPI.pdb
