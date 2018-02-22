@@ -17,10 +17,12 @@ namespace Softtek.Academy2018.Demo.WebAPI.Controllers
     public class ProjectController : ApiController
     {
         private readonly IProjectService _projectService;
+        private readonly IProjectUserService _projectUserService;
 
-        public ProjectController(IProjectService service)
+        public ProjectController(IProjectService service, IProjectUserService projectUserService)
         {
             _projectService = service;
+            _projectUserService = projectUserService;
         }
 
         [Route("")]
@@ -64,8 +66,33 @@ namespace Softtek.Academy2018.Demo.WebAPI.Controllers
                 TechnologyStack = q.TechnologyStack
             }).ToList();
 
-            return Ok(projects);
+            return Ok(projectsDTO);
         }
 
+        [Route("add/user/{userid:int}/project/{projectid:int}")]
+        [HttpPost]
+        public IHttpActionResult AssignUserToProject([FromUri] int userid, [FromUri] int projectid)
+        {
+            if (userid <= 0 || projectid <= 0) return BadRequest("Invalid id(s)");
+
+            var result = _projectUserService.AddUserToProject(projectid, userid);
+
+            if (!result) return BadRequest("Unable to assign user");
+            
+            return Ok("User assigned to project");
+        }
+
+        [Route("remove/user/{userid:int}/project/{projectid:int}")]
+        [HttpPost]
+        public IHttpActionResult RemoveUserToProject([FromUri] int userid, [FromUri] int projectid)
+        {
+            if (userid <= 0 || projectid <= 0) return BadRequest("Invalid id(s)");
+
+            var result = _projectUserService.RemoveUserFromProject(projectid, userid);
+
+            if (!result) return BadRequest("Unable to remove user");
+
+            return Ok("User removed from project");
+        }
     }
 }

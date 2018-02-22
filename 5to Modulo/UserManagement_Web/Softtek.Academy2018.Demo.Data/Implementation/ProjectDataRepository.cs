@@ -57,6 +57,26 @@ namespace Softtek.Academy2018.Demo.Data.Implementation
             }
         }
 
+        public bool RemoveUser(int projectId, int userId)
+        {
+            using (var context = new UserManagementContext())
+            {
+                Project currentProject = context.Projects.SingleOrDefault(x => x.Id == projectId);
+
+                if (currentProject == null) return false;
+
+                User currentUser = context.Users.SingleOrDefault(x => x.Id == userId);
+
+                if (currentUser == null) return false;
+
+                currentProject.Colaborators.Remove(currentUser);
+
+                context.SaveChanges();
+
+                return true;
+            }
+        }
+
         public ICollection<User> GetUsersByProject(int projectId)
         {
             using (var context = new UserManagementContext())
@@ -81,7 +101,7 @@ namespace Softtek.Academy2018.Demo.Data.Implementation
         {
             using (var context = new UserManagementContext())
             {
-                return context.Projects.Any(p => p.Id == userId && p.Colaborators.Any(u => u.Id == userId));
+                return context.Projects.Any(p => p.Id == projectId && p.Colaborators.Any(u => u.Id == userId));
             }
         }
     }

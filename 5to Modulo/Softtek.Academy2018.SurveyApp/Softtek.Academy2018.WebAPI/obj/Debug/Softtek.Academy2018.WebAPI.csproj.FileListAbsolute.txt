@@ -1,0 +1,17 @@
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\bin\Softtek.Academy2018.WebAPI.dll.config
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\bin\Softtek.Academy2018.WebAPI.dll
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\bin\Softtek.Academy2018.WebAPI.pdb
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\bin\Newtonsoft.Json.dll
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\bin\System.Web.Http.dll
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\bin\Newtonsoft.Json.xml
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\bin\System.Web.Http.xml
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\obj\Debug\Softtek.Academy2018.WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\obj\Debug\Softtek.Academy2018.WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\obj\Debug\Softtek.Academy2018.WebAPI.dll
+C:\Users\Academia\Documents\Test\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.WebAPI\obj\Debug\Softtek.Academy2018.WebAPI.pdb

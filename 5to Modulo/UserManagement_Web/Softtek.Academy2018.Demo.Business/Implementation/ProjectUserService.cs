@@ -35,6 +35,25 @@ namespace Softtek.Academy2018.Demo.Business.Implementation
             return _projectRepository.AddUser(projectId, userId);
         }
 
+        public bool RemoveUserFromProject(int projectId, int userId)
+        {
+            if (projectId <= 0 || userId <= 0) return false;
+
+            bool projectExist = _projectRepository.Exist(projectId);
+
+            if (!projectExist) return false;
+
+            bool userExist = _userRepository.Exist(userId);
+
+            if (!userExist) return false;
+
+            bool projectContainsUser = _projectRepository.ContainsUser(projectId, userId);
+
+            if (!projectContainsUser) return false;
+
+            return _projectRepository.RemoveUser(projectId, userId);
+        }
+
         public ICollection<User> GetUsersByProject(int projectId)
         {
             if (projectId <= 0) return null;

@@ -16,6 +16,7 @@ namespace Softtek.Academy2018.Demo.Data.Contracts
         bool Exist(string name);
 
         bool AddUser(int projectId, int userId);
+        bool RemoveUser(int projectId, int userId);
 
         ICollection<User> GetUsersByProject(int projectId);
         bool Exist(int projectId);

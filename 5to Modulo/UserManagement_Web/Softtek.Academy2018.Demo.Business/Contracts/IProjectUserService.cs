@@ -11,6 +11,8 @@ namespace Softtek.Academy2018.Demo.Business.Contracts
     {
         bool AddUserToProject(int projectId, int userId);
 
+        bool RemoveUserFromProject(int projectId, int userId);
+
         ICollection<User> GetUsersByProject(int projectId);
     }
 }
