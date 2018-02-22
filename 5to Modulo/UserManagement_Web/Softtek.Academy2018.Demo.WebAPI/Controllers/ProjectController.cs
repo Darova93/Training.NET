@@ -18,10 +18,9 @@ namespace Softtek.Academy2018.Demo.WebAPI.Controllers
     {
         private readonly IProjectService _projectService;
 
-        public ProjectController()
+        public ProjectController(IProjectService service)
         {
-            IProjectRepository repository = new ProjectDataRepository();
-            _projectService = new ProjectService(repository);
+            _projectService = service;
         }
 
         [Route("")]
@@ -53,8 +52,19 @@ namespace Softtek.Academy2018.Demo.WebAPI.Controllers
         [HttpGet]
         public IHttpActionResult GetAll()
         {
+            var projects = _projectService.GetAll();
 
-            return Ok();
+            if (projects == null) return NotFound();
+
+            List<ProjectDTO> projectsDTO = projects.Select(q => new ProjectDTO
+            {
+                Id = q.Id,
+                Name = q.Name,
+                Area = q.Area,
+                TechnologyStack = q.TechnologyStack
+            }).ToList();
+
+            return Ok(projects);
         }
 
     }

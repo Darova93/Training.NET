@@ -20,3 +20,14 @@ C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Soft
 C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Domain\obj\Debug\Softtek.Academy2018.Demo.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Domain\obj\Debug\Softtek.Academy2018.Demo.Domain.dll
 C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\UserManagement_Demo\Softtek.Academy2018.Demo.Domain\obj\Debug\Softtek.Academy2018.Demo.Domain.pdb
+E:\Archivos\Softtek\Academia\Repository\5to Modulo\UserManagement_Interface\Softtek.Academy2018.Demo.Domain\bin\Debug\Softtek.Academy2018.Demo.Domain.dll.config
+E:\Archivos\Softtek\Academia\Repository\5to Modulo\UserManagement_Interface\Softtek.Academy2018.Demo.Domain\bin\Debug\Softtek.Academy2018.Demo.Domain.dll
+E:\Archivos\Softtek\Academia\Repository\5to Modulo\UserManagement_Interface\Softtek.Academy2018.Demo.Domain\bin\Debug\Softtek.Academy2018.Demo.Domain.pdb
+E:\Archivos\Softtek\Academia\Repository\5to Modulo\UserManagement_Interface\Softtek.Academy2018.Demo.Domain\bin\Debug\EntityFramework.dll
+E:\Archivos\Softtek\Academia\Repository\5to Modulo\UserManagement_Interface\Softtek.Academy2018.Demo.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\Archivos\Softtek\Academia\Repository\5to Modulo\UserManagement_Interface\Softtek.Academy2018.Demo.Domain\bin\Debug\EntityFramework.xml
+E:\Archivos\Softtek\Academia\Repository\5to Modulo\UserManagement_Interface\Softtek.Academy2018.Demo.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\Archivos\Softtek\Academia\Repository\5to Modulo\UserManagement_Interface\Softtek.Academy2018.Demo.Domain\obj\Debug\Softtek.Academy2018.Demo.Domain.csprojResolveAssemblyReference.cache
+E:\Archivos\Softtek\Academia\Repository\5to Modulo\UserManagement_Interface\Softtek.Academy2018.Demo.Domain\obj\Debug\Softtek.Academy2018.Demo.Domain.csproj.CoreCompileInputs.cache
+E:\Archivos\Softtek\Academia\Repository\5to Modulo\UserManagement_Interface\Softtek.Academy2018.Demo.Domain\obj\Debug\Softtek.Academy2018.Demo.Domain.dll
+E:\Archivos\Softtek\Academia\Repository\5to Modulo\UserManagement_Interface\Softtek.Academy2018.Demo.Domain\obj\Debug\Softtek.Academy2018.Demo.Domain.pdb
