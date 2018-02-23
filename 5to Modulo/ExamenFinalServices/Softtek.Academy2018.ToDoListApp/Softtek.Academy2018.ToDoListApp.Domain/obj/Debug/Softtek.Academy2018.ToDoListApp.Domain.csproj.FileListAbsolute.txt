@@ -1,0 +1,11 @@
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\Softtek.Academy2018.ToDoListApp.Domain.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\Softtek.Academy2018.ToDoListApp.Domain.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\Softtek.Academy2018.ToDoListApp.Domain.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.SqlServer.xml
