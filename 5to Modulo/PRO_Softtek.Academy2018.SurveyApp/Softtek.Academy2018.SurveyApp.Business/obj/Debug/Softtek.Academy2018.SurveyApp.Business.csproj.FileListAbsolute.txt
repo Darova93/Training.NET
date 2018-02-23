@@ -1,0 +1,13 @@
+E:\Archivos\Proyectos\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.SurveyApp.Business\bin\Debug\Softtek.Academy2018.SurveyApp.Business.dll
+E:\Archivos\Proyectos\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.SurveyApp.Business\bin\Debug\Softtek.Academy2018.SurveyApp.Business.pdb
+E:\Archivos\Proyectos\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.SurveyApp.Business\bin\Debug\Softtek.Academy2018.SurveyApp.Data.dll
+E:\Archivos\Proyectos\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.SurveyApp.Business\bin\Debug\Softtek.Academy2018.SurveyApp.Domain.dll
+E:\Archivos\Proyectos\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.SurveyApp.Business\bin\Debug\EntityFramework.dll
+E:\Archivos\Proyectos\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.SurveyApp.Business\bin\Debug\Softtek.Academy2018.SurveyApp.Data.pdb
+E:\Archivos\Proyectos\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.SurveyApp.Business\bin\Debug\Softtek.Academy2018.SurveyApp.Data.dll.config
+E:\Archivos\Proyectos\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.SurveyApp.Business\bin\Debug\Softtek.Academy2018.SurveyApp.Domain.pdb
+E:\Archivos\Proyectos\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.SurveyApp.Business\bin\Debug\EntityFramework.xml
+E:\Archivos\Proyectos\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.SurveyApp.Business\obj\Debug\Softtek.Academy2018.SurveyApp.Business.csprojResolveAssemblyReference.cache
+E:\Archivos\Proyectos\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.SurveyApp.Business\obj\Debug\Softtek.Academy2018.SurveyApp.Business.csproj.CoreCompileInputs.cache
+E:\Archivos\Proyectos\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.SurveyApp.Business\obj\Debug\Softtek.Academy2018.SurveyApp.Business.dll
+E:\Archivos\Proyectos\Softtek.Academy2018.SurveyApp\Softtek.Academy2018.SurveyApp.Business\obj\Debug\Softtek.Academy2018.SurveyApp.Business.pdb
