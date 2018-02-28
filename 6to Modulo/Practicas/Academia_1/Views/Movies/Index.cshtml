@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Academia_1.Models.Movie>
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{var title = "Test";}
+
+<h1> @title</h1>
+
+@foreach (var movie in Model)
+{
+    <div>
+        <ul>
+            <li>@movie.Name</li>
+        </ul>
+    </div>
+}

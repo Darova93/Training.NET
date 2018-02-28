@@ -1,0 +1,9 @@
+C:\Users\Academia\Documents\david_rodriguezv\6to Modulo\Practicas\HTML\bin\HTML.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\6to Modulo\Practicas\HTML\bin\HTML.dll
+C:\Users\Academia\Documents\david_rodriguezv\6to Modulo\Practicas\HTML\bin\HTML.pdb
+C:\Users\Academia\Documents\david_rodriguezv\6to Modulo\Practicas\HTML\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Academia\Documents\david_rodriguezv\6to Modulo\Practicas\HTML\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Academia\Documents\david_rodriguezv\6to Modulo\Practicas\HTML\obj\Debug\HTML.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\6to Modulo\Practicas\HTML\obj\Debug\HTML.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\6to Modulo\Practicas\HTML\obj\Debug\HTML.dll
+C:\Users\Academia\Documents\david_rodriguezv\6to Modulo\Practicas\HTML\obj\Debug\HTML.pdb

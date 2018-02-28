@@ -1,0 +1,18 @@
+﻿@model Academia_1.ViewModel.MovieFormViewModel
+@{
+    ViewBag.Title = "MovieForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Movie</h2>
+<p>@Model.Movie.Name</p>
+
+<h2>Genre</h2>
+@foreach (var movie in Model.Genre)
+{
+    <div>
+        <ul>
+            <li>@movie.Name</li>
+        </ul>
+    </div>
+}
