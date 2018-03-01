@@ -11,11 +11,15 @@ namespace Softtek.MVC.Models
 
         public string Name { get; set; }
 
-        public virtual ICollection<User> Collaborators { get; set; }
+        public string Area { get; set; }
+
+        public string TechnologyStack { get; set; }
+
+        public virtual ICollection<User> Colaborators { get; set; }
 
         public Project()
         {
-            Collaborators = new HashSet<User>();
+            Colaborators = new HashSet<User>();
         }
     }
 }

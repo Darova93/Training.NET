@@ -9,27 +9,20 @@ namespace Softtek.MVC.ViewModels
 {
     public class CreateUserViewModel
     {
-        public int? Id { get; set; }
+        public int Id { get; set; }
 
-        [Required]
-        [StringLength(200)]
-        public string Name { get; set; }
+        public string IS { get; set; }
 
-        [Required]
-        public int ProjectId { get; set; }
+        public string FirstName { get; set; }
 
-        public IEnumerable<Project> Projects { get; set; }
+        public string LastName { get; set; }
 
-        public CreateUserViewModel()
-        {
-            Id = 0;
-        }
+        public DateTime CreatedDate { get; set; }
 
-        public CreateUserViewModel(User user)
-        {
-            Id = user.Id;
-            Name = user.Name;
-            ProjectId = user.ProjectId;
-        }
+        public Double Salary { get; set; }
+
+        public DateTime? DateOfBirth { get; set; }
+
+        public bool IsActive { get; set; }
     }
 }

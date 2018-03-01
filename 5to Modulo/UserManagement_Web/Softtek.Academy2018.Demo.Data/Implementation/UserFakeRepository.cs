@@ -70,6 +70,11 @@ namespace Softtek.Academy2018.Demo.Data.Implementation
             return null;
         }
 
+        public ICollection<User> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
         public string GetIS(int id)
         {
             return _users.SingleOrDefault(x => x.Id == id).IS ?? null;

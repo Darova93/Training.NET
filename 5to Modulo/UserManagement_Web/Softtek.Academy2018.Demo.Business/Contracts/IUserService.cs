@@ -16,5 +16,7 @@ namespace Softtek.Academy2018.Demo.Business.Contracts
         bool Update(User user);
 
         bool Delete(int id);
+
+        ICollection<User> GetAll();
     }
 }

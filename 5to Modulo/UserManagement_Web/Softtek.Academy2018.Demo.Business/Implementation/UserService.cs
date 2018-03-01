@@ -61,6 +61,11 @@ namespace Softtek.Academy2018.Demo.Business.Implementation
             return user;
         }
 
+        public ICollection<User> GetAll()
+        {
+            return _userRepository.GetAll();
+        }
+
         public bool Update(User user)
         {
             if (user.Id <= 0) return false;

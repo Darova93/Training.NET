@@ -27,6 +27,14 @@ namespace Softtek.Academy2018.Demo.Data.Implementation
             }
         }
 
+        public ICollection<User> GetAll()
+        {
+            using (var context = new UserManagementContext())
+            {
+                return context.Users.ToList();
+            }
+        }
+
         public bool Delete(int id)
         {
             using (var ctx = new UserManagementContext())

@@ -73,6 +73,29 @@ namespace Softtek.Academy2018.Demo.WebAPI.Controllers
             return Ok(userDTO);
         }
 
+        [Route("")]
+        [HttpGet]
+        public IHttpActionResult GetAll()
+        {
+            var users = _userService.GetAll();
+
+            if (users == null) return NotFound();
+
+            List<UserDTO> userDTO = users.Select(q => new UserDTO
+            {
+                Id = q.Id,
+                IS = q.IS,
+                FirstName = q.FirstName,
+                LastName = q.LastName,
+                DateOfBirth = q.DateOfBirth,
+                CreatedDate = q.CreatedDate,
+                ModifiedDate = q.ModifiedDate,
+                Salary = q.Salary
+            }).ToList();
+
+            return Ok(userDTO);
+        }
+
         [Route("{id:int}")]
         [HttpDelete]
         public IHttpActionResult Delete([FromUri] int id)
