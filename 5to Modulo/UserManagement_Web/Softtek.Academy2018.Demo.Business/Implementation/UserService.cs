@@ -63,7 +63,7 @@ namespace Softtek.Academy2018.Demo.Business.Implementation
 
         public ICollection<User> GetAll()
         {
-            return _userRepository.GetAll();
+            return _userRepository.GetAll().Where(x => x.IsActive==true).ToList();
         }
 
         public bool Update(User user)
@@ -74,11 +74,11 @@ namespace Softtek.Academy2018.Demo.Business.Implementation
                 string.IsNullOrEmpty(user.FirstName)
                 || string.IsNullOrEmpty(user.LastName)) return false;
 
-            if (!user.DateOfBirth.HasValue) return false;
+            //if (!user.DateOfBirth.HasValue) return false;
 
-            bool validAge = DateTime.Now.Year - user.DateOfBirth.Value.Year > 18;
+            //bool validAge = DateTime.Now.Year - user.DateOfBirth.Value.Year > 18;
 
-            if (!validAge) return false;
+            //if (!validAge) return false;
 
             string currentIS = _userRepository.GetIS(user.Id);
 

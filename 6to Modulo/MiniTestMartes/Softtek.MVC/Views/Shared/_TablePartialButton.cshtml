@@ -1,0 +1,31 @@
+﻿@model Softtek.MVC.Models.PartialButton
+@using Softtek.MVC.Models
+
+<td style="width:400px">
+    <div class="btn-group" role="group">
+
+        @Html.Partial("_PartialButton", new PartialButton
+   {
+       Action = "Edit",
+       ButtonType = "btn-primary",
+       GlyphIcon = "pencil",
+       Id = Model.Id
+   })
+
+        @Html.Partial("_PartialButton", new PartialButton
+   {
+       Action = "Details",
+       ButtonType = "btn-success",
+       GlyphIcon = "list",
+       Id = Model.Id
+   })
+
+        @Html.Partial("_PartialButton", new PartialButton
+   {
+       Action = "Delete",
+       ButtonType = "btn-danger",
+       GlyphIcon = "trash",
+       Id = Model.Id
+   })
+    </div>
+</td>

@@ -25,11 +25,25 @@
         @Html.ValidationMessageFor(x => x.IS)
     </div>
 
+    <div class="form-group">
+        @Html.LabelFor(x=>x.Salary)
+        @Html.TextBoxFor(x => x.Salary, new { @type = "number", @class = "form-control" }) 
+        @Html.ValidationMessageFor(x=>x.Salary)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.DateOfBirth)
+        @Html.TextBoxFor(m => m.DateOfBirth, new { @type = "date", @class = "form-control" })
+    </div>
+
     @*<div class="form-group">
         @Html.LabelFor(x => x.ProjectId)
         @Html.DropDownListFor(x => x.ProjectId, new SelectList(Model.Projects, "Id", "Name"), "Select a project", new { @class = "form-control" })
         @Html.ValidationMessageFor(x => x.ProjectId)
     </div>*@
+
+    @Html.AntiForgeryToken()
+
     @Html.HiddenFor(x => x.Id);
     <button type="submit" class="btn btn-primary">Save</button>
 }

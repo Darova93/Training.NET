@@ -115,6 +115,7 @@ namespace Softtek.Academy2018.Demo.WebAPI.Controllers
 
             User user = new User
             {
+                IS = userDTO.IS,
                 Id = id,
                 FirstName = userDTO.FirstName,
                 LastName = userDTO.LastName,

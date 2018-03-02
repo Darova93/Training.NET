@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<Softtek.MVC.Models.Project>
+@using Softtek.MVC.Models
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -25,7 +26,16 @@ else
             @foreach (var project in Model)
                 {
                 <tr>
-                    <td>@Html.ActionLink(project.Name, "Details", "Project", new { id = project.Id }, null)</td>
+                    <td>
+                        @Html.DisplayFor(m => project.Name)
+                    </td>
+                    <td>
+                        @Html.Partial("_TablePartialButton", new PartialButton
+                       {
+                           Id = project.Id
+                       })
+                    </td>
+
                 </tr>
 
             }

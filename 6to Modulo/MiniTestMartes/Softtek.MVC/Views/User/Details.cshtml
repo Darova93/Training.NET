@@ -1,0 +1,13 @@
+﻿@model Softtek.MVC.ViewModels.CreateUserViewModel
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>User Data</h3>
+<ul>
+    <li><strong>IS: </strong> @Model.IS</li>
+    <li><strong>Name: </strong> @Model.FirstName @Model.LastName</li>
+    <li><strong>Salary: </strong>@Model.Salary</li>
+    <li><strong>Birth Date: </strong>@Model.DateOfBirth</li>
+</ul>
