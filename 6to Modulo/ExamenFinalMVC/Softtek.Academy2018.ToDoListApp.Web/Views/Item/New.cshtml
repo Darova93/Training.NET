@@ -1,0 +1,68 @@
+﻿@model Softtek.Academy2018.ToDoListApp.Web.ViewModels.ItemViewModel
+@using Softtek.Academy2018.ToDoListApp.Web.Models
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model == null)
+{
+    <h2>Add new item</h2>
+}
+else
+{
+    <h2>Update item</h2>
+}
+
+@using (Html.BeginForm(Model.Action, "Item"))
+{
+    <div class="form-group">
+        @Html.LabelFor(i => i.Title)
+        @Html.TextBoxFor(i => i.Title, new { @class = "form-control" })
+        @Html.ValidationMessageFor(i => i.Title)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(i => i.Description)
+        @Html.TextAreaFor(i => i.Description, new { @class = "form-control" })
+        @Html.ValidationMessageFor(i => i.Description)
+    </div>
+
+    @*<div class="form-group">
+        @Html.LabelFor(i => i.Status)
+        @Html.EnumDropDownListFor(i => i.Status, "Select a Status", new { @class = "form-control" })
+        @Html.ValidationMessageFor(i => i.Status)
+    </div>*@
+
+    <div class="form-group">
+        @Html.LabelFor(i => i.DueDate)
+        @Html.TextBoxFor(i => i.DueDate, new { @type = "date", @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(i => i.PriorityId)
+        @Html.TextBoxFor(i => i.PriorityId, new { @type = "number", @class = "form-control" })
+        @Html.ValidationMessageFor(i => i.PriorityId)
+    </div>
+
+    <div class="form-group">
+            @Html.LabelFor(i => i.TagId)
+            @Html.DropDownListFor(i => i.TagId, new SelectList(Model.Tags, "Id", "Name"), "Select a tag", new { @class = "form-control" })
+            @Html.ValidationMessageFor(i => i.TagId)
+        </div>
+
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(x => x.Id);
+
+    <button name ="submit" type="submit" class="btn btn-primary" value="ready">Save</button>
+
+    <button name ="submit" type="submit" class="btn btn-primary" value="draft">Save as Draft</button>
+
+}
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

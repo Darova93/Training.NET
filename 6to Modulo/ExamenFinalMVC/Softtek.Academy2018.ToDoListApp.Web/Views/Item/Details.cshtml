@@ -1,0 +1,15 @@
+﻿@model Softtek.Academy2018.ToDoListApp.Web.ViewModels.ItemViewModel
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Item Details</h2>
+<ul>
+    <li><strong>Title: </strong> @Model.Title</li>
+    <li><strong>Description: </strong> @Model.Description</li>
+    <li><strong>Priority: </strong>@Model.PriorityId</li>
+    <li><strong>Due Date: </strong>@Model.DueDate</li>
+    <li><strong>Status: </strong>@Model.Status</li>
+    <li><strong>Tags: </strong>@Model.Tags</li>
+</ul>

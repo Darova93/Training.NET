@@ -1,0 +1,35 @@
+﻿@model Softtek.Academy2018.ToDoListApp.Web.Models.Tag
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New tag</h2>
+
+@using (Html.BeginForm("Save", "Tag"))
+{
+    <div class="form-group">
+        @Html.LabelFor(i => i.Name)
+        @Html.TextBoxFor(i => i.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(i => i.Name)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(i => i.IsActive)
+        @Html.CheckBoxFor(i => i.IsActive, new { @class = "form-control" })
+        @Html.ValidationMessageFor(i => i.IsActive)
+    </div>
+    
+        @Html.AntiForgeryToken()
+
+        @Html.HiddenFor(x => x.Id);
+
+    <button name="submit" type="submit" class="btn btn-primary">Save</button>
+
+}
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
