@@ -1,0 +1,46 @@
+body{
+    background-color:white;
+}
+nav{
+    background-color: black;
+    color:white;
+}
+nav ul li{
+    display:inline-flex;
+}
+.main-header--menu-element{
+    margin: auto;
+    display: inline-block;
+    padding: 15px;
+}
+
+main>section{
+    height:50vh;
+}
+.main-body{
+    background-color: white;
+}
+.main-body--list-element{
+    display:inline-block;
+    height: 100%;
+}
+
+
+.main-footer{
+    columns: 7;
+}
+footer{
+    background-color: rgb(242, 242, 242);
+}
+footer section ul{
+    height: 100%;
+}
+footer section li{
+    display: block;
+}
+footer section{
+    display: inline;
+}
+footer*{
+    display:inline-block;
+}
