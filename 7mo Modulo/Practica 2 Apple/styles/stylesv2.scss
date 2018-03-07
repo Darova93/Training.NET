@@ -1,0 +1,55 @@
+body{
+    background-color:white;
+}
+nav{
+    background-color: black;
+    color:white;
+}
+nav ul li{
+    display:inline-flex;
+}
+.main-header--menu-element{
+    margin: auto;
+    display: inline-block;
+    padding: 15px;
+}
+
+main>section{
+    height:50vh;
+}
+.main-body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.main-body--list-element1{
+    background-image: url("./iphone_x_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-body--list-element{
+    display:block;
+    width: 150%;
+    height: 100%;
+}
+
+
+.main-footer{
+    columns: 7;
+}
+footer{
+    background-color: rgb(242, 242, 242);
+}
+footer section ul{
+    height: 100%;
+}
+footer section li{
+    display: block;
+}
+footer section{
+    display: inline;
+}
+footer*{
+    display:inline-block;
+}
