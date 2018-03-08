@@ -62,9 +62,12 @@ function newrow() {
 }
 
 function deletequestion(number){
-    var question = "savedQuestion"+number;
-    var todelete = document.getElementById(question)
-    todelete.parentNode.removeChild(todelete);
+    var result = confirm("Delete?")
+    if (result){
+        var question = "savedQuestion"+number;
+        var todelete = document.getElementById(question)
+        todelete.parentNode.removeChild(todelete);
+    }
 }
 
 document.getElementById("titleForm").addEventListener("submit",function(){
