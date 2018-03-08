@@ -1,0 +1,38 @@
+<!doctype html>
+<html ng-app="surveyApp">
+
+<head>
+
+</head>
+
+<body ng-controller="SurveyController as ctrl">
+    <label>Nombre: </label>
+    <form ng-submit="ctrl.crearPregunta()">
+        <input type="text" ng-model="ctrl.newQuestion" placeholder="Agrega una pregunta" required="required">
+        <input type="submit" value="Crear">
+    </form>
+
+    <hr>
+    <section ng-repeat="pregunta in ctrl.preguntas track by $index">
+        <h2>{{pregunta.name}}</h2>
+        <form ng-submit="ctrl.crearOpcion($index)">
+            <input type="text" ng-model="ctrl.newOption" placeholder="Agrega una opcion" required="required">
+            <input type="submit" value="Agregar opcion">
+        </form>
+        <ul>
+            <li ng-repeat="option in pregunta.options track by $index">
+                <form ng-submit="ctrl.borrarOpcion($parent.$index, $index)">
+                    <input type="radio" name="" id="">{{option.name}}
+                    <button type="submit">Eliminar</button>
+                </form>
+            </li>
+        </ul>
+        <form ng-submit="ctrl.borrarPregunta($index)">
+            <button type="submit">Eliminar pregunta</button>
+        </form>
+    </section>
+    <script src="./angular.js"></script>
+    <script src="./scriptangular.js"></script>
+</body>
+
+</html>
