@@ -1,0 +1,52 @@
+<!doctype html>
+<html ng-app="surveyApp">
+
+<head>
+    <title>Survey App</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="body" ng-controller="SurveyController as ctrl">
+    <header class="surveyTitle">
+        Survey Generator Online
+    </header>
+    <hr>
+
+    <div class="newName">
+        <label>Nombre: </label>
+        <form ng-submit="ctrl.crearPregunta()">
+            <input type="text" ng-model="ctrl.newQuestion" placeholder="Agrega una pregunta" required="required">
+            <input type="submit" value="Crear">
+        </form>
+    </div>
+
+    <div class="surveyList">
+        <section class="questionList" ng-repeat="pregunta in ctrl.preguntas track by $index">
+
+
+            <h2 class="questionHeader"> {{pregunta.name}}
+                <button ng-click="ctrl.borrarPregunta($index)" type="click">Eliminar</button>
+            </h2>
+
+
+            <form ng-submit="ctrl.crearOpcion($index)">
+                <input type="text" ng-model="pregunta.nuevaOpcion" placeholder="Agrega una opcion" required="required">
+                <input type="submit" value="Agregar opcion">
+            </form>
+            <ul>
+                <li ng-repeat="option in pregunta.options track by $index">
+                    <form ng-submit="ctrl.borrarOpcion($parent.$index, $index)">
+                        <input type="radio" name="" id="">{{option.name}}
+                        <button type="submit">Eliminar</button>
+                    </form>
+                </li>
+            </ul>
+
+        </section>
+    </div>
+
+    <script src="./angular.js"></script>
+    <script src="./scriptangular.js"></script>
+</body>
+
+</html>
