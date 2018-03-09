@@ -35,4 +35,39 @@ app.controller('UserController', function UserController($http) {
         return $http(config);
     }
 
+    this.UpdateUser = function(){
+        var data = {
+            first_name: "Deivid",
+            last_name: "rodrigus",
+            second_last_name: "vasqus"
+        };
+
+        var jsondata = JSON.stringify(data);
+        var baseUrl = 'http://10.0.16.28:3000/users/4';
+
+        var config = {
+            method: "PUT",
+            url: baseUrl,
+            data: jsondata,
+            headers: {
+                'Content-Type': 'application/json; charset=utf-8'
+            }
+        };
+        return $http(config);
+    }
+
+    this.DeleteUser = function(){
+
+        var baseUrl = 'http://10.0.16.28:3000/users/5';
+
+        var config = {
+            method: "DELETE",
+            url: baseUrl,
+            headers: {
+                'Content-Type': 'application/json; charset=utf-8'
+            }
+        };
+        return $http(config);
+    }
+
 });
