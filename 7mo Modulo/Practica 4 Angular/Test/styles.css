@@ -1,0 +1,31 @@
+.body{
+    text-align: center;
+    background-color:rgb(180, 190, 161);
+}
+
+.surveyTitle{
+    display:flex;
+    justify-content: center;
+    font-size: 3vw;
+    font-family: "Arial", Times, serif;
+    background-color: aliceblue;
+}
+
+.newName{
+    display: flex;
+    flex-direction: column;
+    font-size: 4vh;
+}
+
+.surveyList{
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-around;
+    flex-flow: column wrap;
+}
+.questionList{
+    display: inline-block;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
