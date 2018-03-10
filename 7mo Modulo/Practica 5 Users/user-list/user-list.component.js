@@ -22,7 +22,8 @@ app.controller('UserController', function UserController($http) {
         };
 
         var jsondata = JSON.stringify(data);
-        var baseUrl = 'http://10.0.16.28:3000/users';
+        var baseUrl = 'http://10.0.16.51:3000/users';
+        // var baseUrl = 'http://10.0.16.28:3000/users';
 
         var config = {
             method: "POST",
@@ -33,9 +34,15 @@ app.controller('UserController', function UserController($http) {
             }
         };
         return $http(config);
+        this.userIs = "",
+            this.userFname = "",
+            this.userLname = "",
+            this.userSlname = "",
+            this.userTime = "",
+            this.userGrade = ""
     }
 
-    this.UpdateUser = function(){
+    this.UpdateUser = function () {
         var data = {
             first_name: this.userFname,
             last_name: this.userLname,
@@ -43,7 +50,8 @@ app.controller('UserController', function UserController($http) {
         };
 
         var jsondata = JSON.stringify(data);
-        var baseUrl = 'http://10.0.16.28:3000/users/'+this.updateID;
+        var baseUrl = 'http://10.0.16.51:3000/users' + this.updateID;
+        // var baseUrl = 'http://10.0.16.28:3000/users/' + this.updateID;
 
         var config = {
             method: "PUT",
@@ -54,12 +62,19 @@ app.controller('UserController', function UserController($http) {
             }
         };
         return $http(config);
-        this.updateID=""
+        this.updateID = "",
+            this.userIs = "",
+            this.userFname = "",
+            this.userLname = "",
+            this.userSlname = "",
+            this.userTime = "",
+            this.userGrade = ""
     }
 
-    this.DeleteUser = function(){
+    this.DeleteUser = function () {
 
-        var baseUrl = 'http://10.0.16.28:3000/users/'+this.deleteID;
+        var baseUrl = 'http://10.0.16.51:3000/users' + this.deleteID;
+        // var baseUrl = 'http://10.0.16.28:3000/users/' + this.deleteID;
 
         var config = {
             method: "DELETE",
@@ -69,27 +84,26 @@ app.controller('UserController', function UserController($http) {
             }
         };
         return $http(config);
-        this.deleteID="";
+        this.deleteID = "";
     }
 
-    // this.searchUser = function(){
+    this.searchUser = function () {
 
-    //     var baseUrl = 'http://10.0.16.28:3000/users/'+this.searchID;
+        var searchedUser = {};
 
-    //     var config = {
-    //         method: "GET",
-    //         url: baseUrl,
-    //         headers: {
-    //             'Content-Type': 'application/json; charset=utf-8'
-    //         }
-    //     };
-    //     this.searchedUser = $http(config).response.data;
-    //     this.searchID="";
-    // }
+        var baseUrl = 'http://10.0.16.51:3000/users' + this.searchID;
+        // var baseUrl = 'http://10.0.16.28:3000/users/' + this.searchID;
+
+        var config = {
+            method: "GET",
+            url: baseUrl,
+            headers: {
+                'Content-Type': 'application/json; charset=utf-8'
+            }
+        };
+        return this.searchedUser = $http(config).response.data;
+        this.searchID = "";
+    }
 });
 
-app.controller('UserController', function UserController($scope, $http) {
-    $http.get("http://10.0.16.28:3000/users/").then(function (response) {
-        $scope.myData = response.data;
-    });
-});
+

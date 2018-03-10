@@ -30,35 +30,28 @@
         <input type="submit" value="Send"></input> Update
     </form>
 
-    <!-- <form action="#" ng-submit="ctrl.searchUser()">
-        <input type="text" ng-model="ctrl.searchID" name="id" id=""></input>
-        <input type="submit" value="Send"></input> Get by ID
-        <li>IS:{{ctrl.searchedUser.is}}</li>
-        <li>First Name:{{user.first_name}}</li>
-        <li>Last Name:{{user.last_name}}</li>
-        <li>Second Last Name:{{user.second_last_name}}</li>
-        <li>Hour:{{user.second_last_name}}</li>
-        <li>Id:{{user.id}}</li>
-    </form> -->
-
     <form action="#" ng-submit="ctrl.DeleteUser()">
         <input type="text" ng-model="ctrl.deleteID" name="id" id=""></input>
         <input type="submit" value="Send"></input> Delete
     </form>
 
-    <section ng-repeat="user in myData">
-        <ul>
-            <li>IS:{{user.is}}</li>
-            <li>First Name:{{user.first_name}}</li>
-            <li>Last Name:{{user.last_name}}</li>
-            <li>Second Last Name:{{user.second_last_name}}</li>
-            <li>Hour:{{user.second_last_name}}</li>
-            <li>Id:{{user.id}}</li>
-        </ul>
-    </section>
+    <div ng-controller="GetController">
+        <section ng-repeat="user in myData">
+            <ul>
+                <li>IS:{{user.is}}</li>
+                <li>First Name:{{user.first_name}}</li>
+                <li>Last Name:{{user.last_name}}</li>
+                <li>Second Last Name:{{user.second_last_name}}</li>
+                <li>Hour:{{user.second_last_name}}</li>
+                <li>Id:{{user.id}}</li>
+            </ul>
+        </section>
+    </div>
+
 
     <script src="./angular.js"></script>
     <script src="./user-list/user-list.component.js"></script>
+    <script src="./user-list/user-list.get.js"></script>
 </body>
 
 </html>
