@@ -1,0 +1,33 @@
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\Softtek.Academy2018.ToDoListApp.Domain.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\Softtek.Academy2018.ToDoListApp.Domain.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\Softtek.Academy2018.ToDoListApp.Domain.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\ExamenFinalServices\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MVC Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\Softtek.Academy2018.ToDoListApp.Domain.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MVC Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\Softtek.Academy2018.ToDoListApp.Domain.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MVC Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\Softtek.Academy2018.ToDoListApp.Domain.pdb
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MVC Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MVC Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MVC Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MVC Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MVC Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MVC Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MVC Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.dll
+C:\Users\Academia\Documents\david_rodriguezv\5to Modulo\MVC Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.pdb
+E:\Archivos\Softtek\Academia\Repository\7mo Modulo\Angular Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\Softtek.Academy2018.ToDoListApp.Domain.dll.config
+E:\Archivos\Softtek\Academia\Repository\7mo Modulo\Angular Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\Softtek.Academy2018.ToDoListApp.Domain.dll
+E:\Archivos\Softtek\Academia\Repository\7mo Modulo\Angular Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\Softtek.Academy2018.ToDoListApp.Domain.pdb
+E:\Archivos\Softtek\Academia\Repository\7mo Modulo\Angular Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.dll
+E:\Archivos\Softtek\Academia\Repository\7mo Modulo\Angular Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\Archivos\Softtek\Academia\Repository\7mo Modulo\Angular Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.xml
+E:\Archivos\Softtek\Academia\Repository\7mo Modulo\Angular Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\Archivos\Softtek\Academia\Repository\7mo Modulo\Angular Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.csprojResolveAssemblyReference.cache
+E:\Archivos\Softtek\Academia\Repository\7mo Modulo\Angular Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.csproj.CoreCompileInputs.cache
+E:\Archivos\Softtek\Academia\Repository\7mo Modulo\Angular Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.dll
+E:\Archivos\Softtek\Academia\Repository\7mo Modulo\Angular Server\Softtek.Academy2018.ToDoListApp\Softtek.Academy2018.ToDoListApp.Domain\obj\Debug\Softtek.Academy2018.ToDoListApp.Domain.pdb
