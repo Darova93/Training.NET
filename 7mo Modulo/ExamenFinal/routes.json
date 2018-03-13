@@ -1,0 +1,6 @@
+{
+  "/DRVA/tasks": "/tasks",
+  "/DRVA/:resource/:id":"/:resource/:id",
+  "/DRVA/tags": "/tags",
+  "/DRVA/tags\\?id=:id": "/posts/tags:id"
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ToDoList">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="./angular/angular.js"></script>
+    <script src="./angular/angular-route.js"></script>
+    <script src="./app.js"></script>
+    <script src="./item.controller.js"></script>
+    <script src="./todolistapp.js"></script>
+
+    <title>ToDoList App</title>
+</head>
+
+<body>
+    <header>
+            <a href="#!/tasks/new">Add a new task</a>
+    </header>
+    <hr>
+    <div ng-view></div>
+
+    <hr>
+    <footer>
+            <a href="#!/tasks">Home</a>
+    </footer>
+</body>
+
+</html>
