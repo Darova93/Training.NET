@@ -13,6 +13,9 @@
             todolistapp.getTask($scope.taskid).then(function (data) {
                 $scope.task = data;
             });
+            todolistapp.getTag($scope.taskid).then(function (data) {
+                $scope.tags = data;
+            });
         }
 
         var getTags = function (data) {

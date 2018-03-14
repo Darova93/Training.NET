@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softtek.Academy.Final.Data", "Softtek.Academy.Final.Data\Softtek.Academy.Final.Data.csproj", "{6CFB79C5-4B71-4FCA-A79B-E241071A2CEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softtek.Academy.Final.Business", "Softtek.Academy.Final.Business\Softtek.Academy.Final.Business.csproj", "{D0E015EE-F260-478F-8357-AA186A47F696}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softtek.Academy.Final.Domain", "Softtek.Academy.Final.Domain\Softtek.Academy.Final.Domain.csproj", "{7AD77CB1-7168-4BEF-8E95-69AA9421502F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softtek.Academy.Final.MVC", "Softtek.Academy.Final.MVC\Softtek.Academy.Final.MVC.csproj", "{3D479603-3FE3-4126-8044-4481ED91C33F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softtek.Academy.Final.WebAPI", "Softtek.Academy.Final.WebAPI\Softtek.Academy.Final.WebAPI.csproj", "{B9244BAE-7695-4C6D-B276-250E571F5E7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CFB79C5-4B71-4FCA-A79B-E241071A2CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CFB79C5-4B71-4FCA-A79B-E241071A2CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CFB79C5-4B71-4FCA-A79B-E241071A2CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CFB79C5-4B71-4FCA-A79B-E241071A2CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0E015EE-F260-478F-8357-AA186A47F696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E015EE-F260-478F-8357-AA186A47F696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E015EE-F260-478F-8357-AA186A47F696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E015EE-F260-478F-8357-AA186A47F696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AD77CB1-7168-4BEF-8E95-69AA9421502F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD77CB1-7168-4BEF-8E95-69AA9421502F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD77CB1-7168-4BEF-8E95-69AA9421502F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD77CB1-7168-4BEF-8E95-69AA9421502F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D479603-3FE3-4126-8044-4481ED91C33F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D479603-3FE3-4126-8044-4481ED91C33F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D479603-3FE3-4126-8044-4481ED91C33F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D479603-3FE3-4126-8044-4481ED91C33F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9244BAE-7695-4C6D-B276-250E571F5E7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9244BAE-7695-4C6D-B276-250E571F5E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9244BAE-7695-4C6D-B276-250E571F5E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9244BAE-7695-4C6D-B276-250E571F5E7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28B674D3-4D38-455B-A749-16102457180A}
+	EndGlobalSection
+EndGlobal
