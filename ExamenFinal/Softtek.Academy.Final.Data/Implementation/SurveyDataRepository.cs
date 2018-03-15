@@ -8,17 +8,107 @@ namespace Softtek.Academy.Final.Data.Implementation
 {
     public class SurveyDataRepository : ISurveyRepository
     {
-        public bool Archive(int id)
+        public Survey Get(int id)
+        {
+            using (var context = new SurveySystemDbContext())
+            {
+                return context.Surveys.SingleOrDefault(s => s.Id == id && s.IsArchived == false);
+            }
+        }
+
+        public ICollection<Survey> GetAll()
+        {
+            using (var context = new SurveySystemDbContext())
+            {
+                return context.Surveys.Where(s => s.IsArchived == false).ToList();
+            }
+        }
+
+        public int Create(Survey survey)
+        {
+            using (var context = new SurveySystemDbContext())
+            {
+                if (survey == null) return 0;
+
+                survey.CreatedDate = DateTime.Now;
+                survey.Status = Status.Draft;
+                survey.IsActive = false;
+                survey.IsArchived = false;
+
+                context.Surveys.Add(survey);
+                context.SaveChanges();
+
+                return survey.Id;
+            }
+        }
+
+        public bool Update(Survey survey)
+        {
+            using (var context = new SurveySystemDbContext())
+            {
+                if (survey == null) return false;
+                if (survey.Id <= 0) return false;
+
+                Survey oldsurvey = Get(survey.Id);
+                if (oldsurvey == null) return false;
+
+                oldsurvey.Title = survey.Title;
+                oldsurvey.Description = survey.Description;
+                oldsurvey.ModifiedDate = DateTime.Now;
+
+                context.SaveChanges();
+
+                return true;
+            }
+        }
+
+        public bool Delete(int id)
         {
             using (var context = new SurveySystemDbContext())
             {
                 if (id <= 0) return false;
 
                 Survey survey = Get(id);
+                if (survey == null) return false;
 
+                survey.IsArchived = true;
+                survey.ModifiedDate = DateTime.Now;
+
+                context.SaveChanges();
+
+                return true;
+            }
+        }
+
+        public bool Activate(int id)
+        {
+            using (var context = new SurveySystemDbContext())
+            {
+                if (id <= 0) return false;
+
+                Survey survey = Get(id);
+                if (survey == null) return false;
+
+                survey.IsActive = true;
+                survey.ModifiedDate = DateTime.Now;
+
+                context.SaveChanges();
+
+                return true;
+            }
+        }
+
+        public bool DeActivate(int id)
+        {
+            using (var context = new SurveySystemDbContext())
+            {
+                if (id <= 0) return false;
+
+                Survey survey = Get(id);
                 if (survey == null) return false;
 
                 survey.IsActive = false;
+                survey.ModifiedDate = DateTime.Now;
 
                 context.SaveChanges();
 
@@ -37,6 +127,7 @@ namespace Softtek.Academy.Final.Data.Implementation
                 if (survey == null) return false;
 
                 survey.Status = status;
+                survey.ModifiedDate = DateTime.Now;
 
                 context.SaveChanges();
 
@@ -44,54 +135,73 @@ namespace Softtek.Academy.Final.Data.Implementation
             }
         }
 
-        public int Create(Survey survey)
+        public bool AddQuestionToSurvey(int questionid, int surveyid)
         {
             using (var context = new SurveySystemDbContext())
             {
-                if (survey == null) return 0;
+                if (questionid <= 0 || surveyid <= 0) return false;
 
-                survey.CreatedDate = DateTime.Now;
-                survey.Status = Status.Draft;
-                survey.IsActive = false;
+                Question question = context.Questions.FirstOrDefault(q => q.Id == questionid);
+                if (question == null) return false;
 
-                context.Surveys.Add(survey);
+                Survey survey = Get(surveyid);
+                if (survey == null) return false;
+
+                question.Surveys.Add(survey);
+                survey.Questions.Add(question);
+                survey.ModifiedDate = DateTime.Now;
+
                 context.SaveChanges();
 
-                return survey.Id;
+                return true;
             }
         }
 
-        public Survey Get(int id)
+        public bool RemoveQuestionFromSurvey(int questionid, int surveyid)
         {
             using (var context = new SurveySystemDbContext())
             {
-                return context.Surveys.SingleOrDefault(s => s.Id == id);
+                if (questionid <= 0 || surveyid <= 0) return false;
+
+                Question question = context.Questions.FirstOrDefault(q => q.Id == questionid);
+                if (question == null) return false;
+
+                Survey survey = Get(surveyid);
+                if (survey == null) return false;
+
+                question.Surveys.Remove(survey);
+                survey.Questions.Remove(question);
+                survey.ModifiedDate = DateTime.Now;
+
+                context.SaveChanges();
+
+                return true;
             }
         }
 
-        public ICollection<Survey> GetAll()
+        public ICollection<Answer> GetSurveyAnswers(int id)
         {
             using (var context = new SurveySystemDbContext())
             {
-                return context.Surveys.ToList();
-            }
-        }
-
-        public bool Restore(int id)
-        {
-            using (var context = new SurveySystemDbContext())
-            {
-                if (id <= 0) return false;
+                if (id <= 0) return null;
 
                 Survey survey = Get(id);
+                if (survey == null) return null;
 
-                if (survey==null) return false;
+                return survey.Answers.ToList();
+            }
+        }
 
-                survey.IsActive = true;
+        public ICollection<Question> GetSurveyQuestions(int id)
+        {
+            using (var context = new SurveySystemDbContext())
+            {
+                if (id <= 0) return null;
 
-                context.SaveChanges();
+                Survey survey = Get(id);
+                if (survey == null) return null;
 
-                return true;
+                return survey.Questions.ToList();
             }
         }
 
@@ -101,29 +211,12 @@ namespace Softtek.Academy.Final.Data.Implementation
             {
                 if (id <= 0) return false;
 
-                Survey survey = context.Surveys.SingleOrDefault(s => s.Id == id);
+                Survey survey = Get(id);
                 if (survey == null) return false;
 
                 return true;
             }
         }
-
-        public bool Update(Survey survey)
-        {
-            using (var context = new SurveySystemDbContext())
-            {
-                if (survey == null) return false;
-                if (survey.Id <= 0) return false;
-
-                Survey oldsurvey = Get(survey.Id);
-
-                oldsurvey.Title = survey.Title;
-                oldsurvey.Description = survey.Description;
-
-                context.SaveChanges();
-
-                return true;
-            }
-        }
+        
     }
 }

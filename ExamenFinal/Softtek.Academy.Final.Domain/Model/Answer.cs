@@ -4,9 +4,9 @@
     {
         public int SurveyId { get; set; }
 
-        public int? OptionId { get; set; }
-
         public int QuestionId { get; set; }
+
+        public int? OptionId { get; set; }
 
         public string OpenText { get; set; }
 

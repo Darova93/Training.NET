@@ -10,17 +10,6 @@ namespace Softtek.Academy.Final.Data.Implementation
 {
     public class OptionDataRepository : IOptionRepository
     {
-        public ICollection<Option> GetQuestionOptions(int id)
-        {
-            using (var context = new SurveySystemDbContext())
-            {
-                if (id <= 0) return null;
-
-                Question question = context.Questions.SingleOrDefault(s => s.Id == id);
-                if (question == null) return null;
-
-                return context.Options.Where(i => i.QuestionId == id).ToList();
-            }
-        }
+        
     }
 }

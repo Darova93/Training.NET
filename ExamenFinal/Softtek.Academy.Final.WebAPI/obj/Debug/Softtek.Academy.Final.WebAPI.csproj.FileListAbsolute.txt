@@ -36,3 +36,6 @@ C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.W
 C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.WebAPI\obj\Debug\Softtek.Academy.Final.WebAPI.csproj.CoreCompileInputs.cache
 C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.WebAPI\obj\Debug\Softtek.Academy.Final.WebAPI.dll
 C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.WebAPI\obj\Debug\Softtek.Academy.Final.WebAPI.pdb
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.WebAPI\bin\WebApiContrib.IoC.Ninject.dll
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.WebAPI\bin\Softtek.Academy.Final.Business.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.WebAPI\bin\Softtek.Academy.Final.Domain.dll.config

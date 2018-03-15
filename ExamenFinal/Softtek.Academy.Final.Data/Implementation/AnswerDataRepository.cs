@@ -10,6 +10,21 @@ namespace Softtek.Academy.Final.Data.Implementation
 {
     public class AnswerDataRepository : IAnswerRepository
     {
+        public int Create(Answer anwser)
+        {
+            using (var context = new SurveySystemDbContext())
+            {
+                if (anwser == null) return 0;
+
+                anwser.CreatedDate = DateTime.Now;
+
+                context.Answers.Add(anwser);
+                context.SaveChanges();
+
+                return anwser.Id;
+            }
+        }
+
         public Answer Get(int id)
         {
             using (var context = new SurveySystemDbContext())
@@ -23,19 +38,6 @@ namespace Softtek.Academy.Final.Data.Implementation
             using (var context = new SurveySystemDbContext())
             {
                 return context.Answers.ToList();
-            }
-        }
-
-        public ICollection<Answer> GetSurveyAnswers(int id)
-        {
-            using (var context = new SurveySystemDbContext())
-            {
-                if (id <= 0) return null;
-
-                Survey survey = context.Surveys.SingleOrDefault(s => s.Id == id);
-                if (survey == null) return null;
-
-                return context.Answers.Where(s => s.SurveyId == id).ToList();
             }
         }
     }

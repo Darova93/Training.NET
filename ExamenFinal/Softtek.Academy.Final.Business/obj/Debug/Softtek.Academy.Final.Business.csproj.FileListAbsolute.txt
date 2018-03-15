@@ -11,3 +11,11 @@ C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.B
 C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Business\obj\Debug\Softtek.Academy.Final.Business.csproj.CoreCompileInputs.cache
 C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Business\obj\Debug\Softtek.Academy.Final.Business.dll
 C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Business\obj\Debug\Softtek.Academy.Final.Business.pdb
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Business\bin\Debug\Softtek.Academy.Final.Business.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Business\bin\Debug\Ninject.dll
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Business\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Business\bin\Debug\Softtek.Academy.Final.Domain.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Business\bin\Debug\Ninject.xml
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Business\bin\Debug\Ninject.Web.Common.xml
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Business\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Business\bin\Debug\WebActivatorEx.dll

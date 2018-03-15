@@ -9,8 +9,6 @@ namespace Softtek.Academy.Final.Business.Contracts
 {
     public interface IQuestionService : IGenericService<Question>
     {
-        bool AddQuestionToSurvey(int questionid, int surveyid);
 
-        bool RemoveQuestionFromSurvey(int questionid, int surveyid);
     }
 }

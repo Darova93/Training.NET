@@ -4,3 +4,10 @@ C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.D
 C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Domain\obj\Debug\Softtek.Academy.Final.Domain.dll
 C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Domain\obj\Debug\Softtek.Academy.Final.Domain.pdb
 C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Domain\obj\Debug\Softtek.Academy.Final.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Domain\bin\Debug\Softtek.Academy.Final.Domain.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Domain\bin\Debug\Ninject.dll
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Domain\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Domain\bin\Debug\Ninject.xml
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Domain\bin\Debug\Ninject.Web.Common.xml
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Domain\bin\Debug\WebActivatorEx.dll

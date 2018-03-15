@@ -19,6 +19,7 @@ namespace Softtek.Academy.Final.Data.Configurations
             this.Property(s => s.Description).HasMaxLength(200).IsRequired();
             this.Property(s => s.Status).IsRequired();
             this.Property(s => s.IsActive).IsRequired();
+            this.Property(s => s.IsArchived).IsRequired();
         }
     }
 }

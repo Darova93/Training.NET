@@ -5,29 +5,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Softtek.Academy.Final.Domain.Model;
+using Softtek.Academy.Final.Data.Contracts;
 
 namespace Softtek.Academy.Final.Business.Implementation
 {
     public class QuestionService : IQuestionService
     {
-        public bool AddQuestionToSurvey(int questionid, int surveyid)
+        private readonly IQuestionRepository _repository;
+
+        public QuestionService(IQuestionRepository repository)
         {
-            throw new NotImplementedException();
+            _repository = repository;
+           
         }
 
         public Question Get(int id)
         {
-            throw new NotImplementedException();
+            if (id <= 0) return null;
+
+            return _repository.Get(id);
         }
 
         public ICollection<Question> GetAll()
         {
-            throw new NotImplementedException();
-        }
-
-        public bool RemoveQuestionFromSurvey(int questionid, int surveyid)
-        {
-            throw new NotImplementedException();
+            return _repository.GetAll();
         }
     }
 }

@@ -13,21 +13,74 @@ namespace Softtek.Academy.Final.Business.Implementation
     {
 
         private readonly ISurveyRepository _repository;
-        private readonly IAnswerRepository _ansrepository;
+        private readonly IQuestionRepository _quesrepository;
 
-        public SurveyService(ISurveyRepository repository, IAnswerRepository ansrepository)
+        public SurveyService(ISurveyRepository repository, IQuestionRepository quesrepository)
         {
             _repository = repository;
-            _ansrepository = ansrepository;
+            _quesrepository = quesrepository;
         }
 
-        public bool Archive(int id)
+        public int Create(Survey survey)
+        {
+            if (survey == null) return 0;
+
+            if (survey.Title == null || survey.Description == null) return 0;
+
+            if (survey.Title.Length > 50 || survey.Description.Length > 200) return 0;
+
+            int newid = _repository.Create(survey);
+
+            return newid;
+        }
+
+        public bool Update(Survey survey)
+        {
+            if (survey == null) return false;
+
+            if (survey.Id <= 0) return false;
+
+            if (survey.Title == null || survey.Description == null) return false;
+
+            if (survey.Title.Length > 50 || survey.Description.Length > 200) return false;
+
+            var oldsurvey = _repository.Get(survey.Id);
+            if (oldsurvey.Status != Status.Draft) return false;
+
+            bool result = _repository.Update(survey);
+
+            return result;
+        }
+
+        public bool Delete(int id)
         {
             if (id <= 0) return false;
 
             if (!_repository.SurveyExists(id)) return false;
 
-            bool result = _repository.Archive(id);
+            bool result = _repository.Delete(id);
+
+            return result;
+        }
+
+        public bool Activate(int id)
+        {
+            if (id <= 0) return false;
+
+            if (!_repository.SurveyExists(id)) return false;
+
+            bool result = _repository.Activate(id);
+
+            return result;
+        }
+
+        public bool DeActivate(int id)
+        {
+            if (id <= 0) return false;
+
+            if (!_repository.SurveyExists(id)) return false;
+
+            bool result = _repository.DeActivate(id);
 
             return result;
         }
@@ -58,7 +111,7 @@ namespace Softtek.Academy.Final.Business.Implementation
                     {
                         return _repository.ChangeStatus(id, status);
                     }
-                    else if (status == Status.Draft || _ansrepository.GetSurveyAnswers(id) == null)
+                    else if (status == Status.Draft && _repository.GetSurveyAnswers(id) == null)
                     {
                         return _repository.ChangeStatus(id, status);
                     }
@@ -68,15 +121,34 @@ namespace Softtek.Academy.Final.Business.Implementation
             return false;
         }
 
-        public int Create(Survey survey)
+        public bool AddQuestionToSurvey(int questionid, int surveyid)
         {
-            if (survey == null) return 0;
+            if (questionid <= 0 || surveyid <= 0) return false;
 
-            if (survey.Title == null || survey.Description == null) return 0;
+            if (!_repository.SurveyExists(surveyid)) return false;
 
-            int newid = _repository.Create(survey);
+            if (!_quesrepository.QuestionExists(questionid)) return false;
 
-            return newid;
+            if (_quesrepository.SurveyHasQuestion(questionid, surveyid)) return false;
+
+            bool result = _repository.AddQuestionToSurvey(questionid, surveyid);
+
+            return result;
+        }
+
+        public bool RemoveQuestionFromSurvey(int questionid, int surveyid)
+        {
+            if (questionid <= 0 || surveyid <= 0) return false;
+
+            if (!_repository.SurveyExists(surveyid)) return false;
+
+            if (!_quesrepository.QuestionExists(questionid)) return false;
+
+            if (!_quesrepository.SurveyHasQuestion(questionid, surveyid)) return false;
+
+            bool result = _repository.RemoveQuestionFromSurvey(questionid, surveyid);
+
+            return result;
         }
 
         public Survey Get(int id)
@@ -91,43 +163,43 @@ namespace Softtek.Academy.Final.Business.Implementation
             return _repository.GetAll();
         }
 
-        public ICollection<Survey> GetAvailableSurveys()
+        public ICollection<Answer> GetSurveyAnswers(int id)
         {
-            var surveys = GetReadySurveys();
+            if (id <= 0) return null;
 
-            return surveys.Where(s => s.IsActive == true).ToList();
+            if (!_repository.SurveyExists(id)) return null;
+
+            return _repository.GetSurveyAnswers(id);
         }
 
-        public ICollection<Survey> GetReadySurveys()
+        public ICollection<Question> GetSurveyQuestions(int id)
+        {
+            if (id <= 0) return null;
+
+            if (!_repository.SurveyExists(id)) return null;
+
+            return _repository.GetSurveyQuestions(id);
+        }
+
+        public Survey GetUserSurvey(int id)
+        {
+            if (id <= 0) return null;
+
+            if (!_repository.SurveyExists(id)) return null;
+
+            Survey survey = _repository.Get(id);
+
+            if (survey.IsActive == false || survey.Status != Status.Ready) return null;
+
+            return survey;
+        }
+
+        public ICollection<Survey> GetUserSurveys()
         {
             var surveys = _repository.GetAll();
 
-            return surveys.Where(s => s.Status == Status.Ready).ToList();
+            return surveys.Where(s => s.Status != Status.Draft && s.IsActive == true).ToList();
         }
-
-        public bool Restore(int id)
-        {
-            if (id <= 0) return false;
-
-            if (!_repository.SurveyExists(id)) return false;
-
-            bool result = _repository.Restore(id);
-
-            return result;
-        }
-
-        public bool Update(Survey survey)
-        {
-            if (survey == null) return false;
-
-            if (survey.Id <= 0) return false;
-
-            var oldsurvey = _repository.Get(survey.Id);
-            if (oldsurvey.Status != Status.Draft) return false;
-
-            bool result = _repository.Update(survey);
-
-            return result;
-        }
+        
     }
 }

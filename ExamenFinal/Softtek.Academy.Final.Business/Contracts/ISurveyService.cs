@@ -13,14 +13,24 @@ namespace Softtek.Academy.Final.Business.Contracts
 
         bool Update(Survey survey);
 
-        bool Archive(int id);
+        bool Delete(int id);
 
-        bool Restore(int id);
+        bool Activate(int id);
+
+        bool DeActivate(int id);
 
         bool ChangeStatus(int id, Status status);
 
-        ICollection<Survey> GetAvailableSurveys();
+        bool AddQuestionToSurvey(int questionid, int surveyid);
 
-        ICollection<Survey> GetReadySurveys();
+        bool RemoveQuestionFromSurvey(int questionid, int surveyid);
+
+        ICollection<Answer> GetSurveyAnswers(int id);
+
+        ICollection<Question> GetSurveyQuestions(int id);
+
+       Survey GetUserSurvey(int id);
+
+        ICollection<Survey> GetUserSurveys();
     }
 }

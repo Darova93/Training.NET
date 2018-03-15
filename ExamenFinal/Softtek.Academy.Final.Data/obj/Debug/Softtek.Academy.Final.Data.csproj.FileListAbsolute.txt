@@ -15,3 +15,11 @@ C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.D
 C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Data\obj\Debug\Softtek.Academy.Final.Data.csproj.GenerateResource.Cache
 C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Data\obj\Debug\Softtek.Academy.Final.Data.Migrations.connections.resources
 C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Data\obj\Debug\Softtek.Academy.Final.Data.Migrations.configurations.resources
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Data\obj\Debug\Softtek.Academy.Final.Data.Migrations.data.resources
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Data\bin\Debug\Ninject.dll
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Data\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Data\bin\Debug\Softtek.Academy.Final.Domain.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Data\bin\Debug\Ninject.xml
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Data\bin\Debug\Ninject.Web.Common.xml
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Data\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.Data\bin\Debug\WebActivatorEx.dll

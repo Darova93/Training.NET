@@ -10,27 +10,6 @@ namespace Softtek.Academy.Final.Data.Implementation
 {
     public class QuestionDataRepository : IQuestionRepository
     {
-        public bool AddQuestionToSurvey(int questionid, int surveyid)
-        {
-            using (var context = new SurveySystemDbContext())
-            {
-                if (questionid <= 0 || surveyid <= 0) return false;
-
-                Question question = Get(questionid);
-                if (question == null) return false;
-
-                Survey survey = context.Surveys.SingleOrDefault(s => s.Id == surveyid);
-                if (survey == null) return false;
-
-                question.Surveys.Add(survey);
-                survey.Questions.Add(question);
-
-                context.SaveChanges();
-
-                return true;
-            }
-        }
-
         public Question Get(int id)
         {
             using (var context = new SurveySystemDbContext())
@@ -47,37 +26,42 @@ namespace Softtek.Academy.Final.Data.Implementation
             }
         }
 
-        public ICollection<Question> GetSurveyQuestions(int surveyid)
+        public ICollection<Option> GetQuestionOptions(int id)
         {
             using (var context = new SurveySystemDbContext())
             {
-                if (surveyid <= 0) return null;
+                if (id <= 0) return null;
 
-                Survey survey = context.Surveys.Where(s => s.Id == surveyid).SingleOrDefault();
-                if (survey == null) return null;
-                                
-                return survey.Questions.ToList(); ;
+                Question question = Get(id);
+                if (question == null) return null;
+
+                return question.Options.ToList();
             }
         }
 
-        public bool RemoveQuestionFromSurvey(int questionid, int surveyid)
+        public bool QuestionExists(int id)
+        {
+            using (var context = new SurveySystemDbContext())
+            {
+                if (id <= 0) return false;
+
+                Question question = context.Questions.SingleOrDefault(q => q.Id == id);
+                if (question == null) return false;
+
+                return true;
+            }
+        }
+
+        public bool SurveyHasQuestion(int questionid, int surveyid)
         {
             using (var context = new SurveySystemDbContext())
             {
                 if (questionid <= 0 || surveyid <= 0) return false;
 
-                Question question = Get(questionid);
+                Question question = context.Questions.SingleOrDefault(q => q.Id == questionid);
                 if (question == null) return false;
 
-                Survey survey = context.Surveys.SingleOrDefault(s => s.Id == surveyid);
-                if (survey == null) return false;
-
-                question.Surveys.Remove(survey);
-                survey.Questions.Remove(question);
-
-                context.SaveChanges();
-
-                return true;
+                return question.Surveys.Any(i => i.Id == surveyid);
             }
         }
     }
