@@ -14,7 +14,7 @@ namespace Softtek.Academy.Final.Data
 
         public SurveySystemDbContext() : base("SurveySystemDb")
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<SurveySystemDbContext, Migrations.Configuration>());
+            
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

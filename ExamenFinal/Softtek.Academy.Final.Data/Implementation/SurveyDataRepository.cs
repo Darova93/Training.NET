@@ -2,6 +2,8 @@
 using Softtek.Academy.Final.Domain.Model;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 
 namespace Softtek.Academy.Final.Data.Implementation
@@ -49,7 +51,7 @@ namespace Softtek.Academy.Final.Data.Implementation
                 if (survey == null) return false;
                 if (survey.Id <= 0) return false;
 
-                Survey oldsurvey = Get(survey.Id);
+                Survey oldsurvey = context.Surveys.SingleOrDefault(s => s.Id == survey.Id && s.IsArchived == false);
                 if (oldsurvey == null) return false;
 
                 oldsurvey.Title = survey.Title;
@@ -68,7 +70,7 @@ namespace Softtek.Academy.Final.Data.Implementation
             {
                 if (id <= 0) return false;
 
-                Survey survey = Get(id);
+                Survey survey = context.Surveys.SingleOrDefault(s => s.Id == id && s.IsArchived == false);
                 if (survey == null) return false;
 
                 survey.IsArchived = true;
@@ -86,7 +88,7 @@ namespace Softtek.Academy.Final.Data.Implementation
             {
                 if (id <= 0) return false;
 
-                Survey survey = Get(id);
+                Survey survey = context.Surveys.SingleOrDefault(s => s.Id == id && s.IsArchived == false);
                 if (survey == null) return false;
 
                 survey.IsActive = true;
@@ -104,7 +106,7 @@ namespace Softtek.Academy.Final.Data.Implementation
             {
                 if (id <= 0) return false;
 
-                Survey survey = Get(id);
+                Survey survey = context.Surveys.SingleOrDefault(s => s.Id == id && s.IsArchived == false);
                 if (survey == null) return false;
 
                 survey.IsActive = false;
@@ -122,7 +124,7 @@ namespace Softtek.Academy.Final.Data.Implementation
             {
                 if (id <= 0) return false;
 
-                Survey survey = Get(id);
+                Survey survey = context.Surveys.SingleOrDefault(s => s.Id == id && s.IsArchived == false);
 
                 if (survey == null) return false;
 
@@ -144,7 +146,7 @@ namespace Softtek.Academy.Final.Data.Implementation
                 Question question = context.Questions.FirstOrDefault(q => q.Id == questionid);
                 if (question == null) return false;
 
-                Survey survey = Get(surveyid);
+                Survey survey = context.Surveys.SingleOrDefault(s => s.Id == surveyid && s.IsArchived == false);
                 if (survey == null) return false;
 
                 question.Surveys.Add(survey);
@@ -166,7 +168,7 @@ namespace Softtek.Academy.Final.Data.Implementation
                 Question question = context.Questions.FirstOrDefault(q => q.Id == questionid);
                 if (question == null) return false;
 
-                Survey survey = Get(surveyid);
+                Survey survey = context.Surveys.SingleOrDefault(s => s.Id == surveyid && s.IsArchived == false);
                 if (survey == null) return false;
 
                 question.Surveys.Remove(survey);
@@ -185,7 +187,7 @@ namespace Softtek.Academy.Final.Data.Implementation
             {
                 if (id <= 0) return null;
 
-                Survey survey = Get(id);
+                Survey survey = context.Surveys.SingleOrDefault(s => s.Id == id && s.IsArchived == false);
                 if (survey == null) return null;
 
                 return survey.Answers.ToList();
@@ -198,7 +200,7 @@ namespace Softtek.Academy.Final.Data.Implementation
             {
                 if (id <= 0) return null;
 
-                Survey survey = Get(id);
+                Survey survey = context.Surveys.SingleOrDefault(s => s.Id == id && s.IsArchived == false);
                 if (survey == null) return null;
 
                 return survey.Questions.ToList();
@@ -217,6 +219,68 @@ namespace Softtek.Academy.Final.Data.Implementation
                 return true;
             }
         }
-        
+
+        public bool UserSurveyExists(Answer answer)
+        {
+            using (var context = new SurveySystemDbContext())
+            {
+                if (answer.SurveyId <= 0) return false;
+
+                Survey survey = context.Surveys.SingleOrDefault(s => s.Id == answer.SurveyId && s.IsArchived == false && s.IsActive == true && s.Status == Status.Ready);
+
+                if (survey == null) return false;
+
+                if (!survey.Questions.Any(q => q.Id == answer.QuestionId)) return false;
+
+                if (answer.OptionId != null)
+                {
+                    if (!survey.Questions.SingleOrDefault(q => q.Id == answer.QuestionId).Options.Any(o => o.Id == answer.OptionId)) return false;
+                }
+
+                return true;
+            }
+        }
+
+        public bool HasOpenValue(int id)
+        {
+            using (var context = new SurveySystemDbContext())
+            {
+                var survey = context.Surveys.SingleOrDefault(s => s.Id == id && s.IsArchived == false);
+                if (survey == null) return true;
+
+                if (survey.Questions.Count() == 0) return true;
+
+                if (survey.Questions.Any(q => q.QuestionTypeId == 1 || q.QuestionTypeId == 3)) return true;
+
+                return false;
+            }
+        }
+
+        public ICollection<SurveyReport> Report(int id)
+        {
+            List<SurveyReport> report = new List<SurveyReport>();
+
+            string connstring = "Data Source=STKEND13944\\SQLEXPRESS; Initial Catalog = SurveySystemDb; User Id=sa; Password=softtek.001";
+            SqlConnection connstringobj = new SqlConnection(connstring);
+
+            SqlCommand command = new SqlCommand("dbo.usp_SurveyReport", connstringobj);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.Add("@surveyId", SqlDbType.Int).Value = id;
+
+            connstringobj.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                report.Add(new SurveyReport
+                {
+                    Question = reader["Question"].ToString(),
+                    Average = (int)reader["Average"]
+                });
+            }
+            connstringobj.Close();
+
+            return report;
+        }
+
     }
 }

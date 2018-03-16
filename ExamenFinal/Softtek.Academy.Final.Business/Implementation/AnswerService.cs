@@ -32,13 +32,30 @@ namespace Softtek.Academy.Final.Business.Implementation
 
             if (answer.OptionId != null && !string.IsNullOrEmpty(answer.OpenText)) return 0;
 
-            if (answer.Guest.Length > 100 || answer.OpenText.Length > 300) return 0;    
+            Question question = _quesrepository.Get(answer.QuestionId);
 
-            if (string.IsNullOrEmpty(answer.Guest)) return 0;
+            if(question.QuestionTypeId == 1 && string.IsNullOrEmpty(answer.OpenText))
+            {
+                return 0;
+            }
+            else if(question.QuestionTypeId == 1)
+            {
+                if (answer.OpenText.Length > 300) return 0;
+            }
+
+            if ((question.QuestionTypeId == 2 || question.QuestionTypeId == 3) && answer.OptionId==null)
+            {
+                return 0;
+            }
+
+            if (!string.IsNullOrEmpty(answer.Guest))
+            {
+                if (answer.Guest.Length > 100) return 0;
+            }
 
             if (!_quesrepository.QuestionExists(answer.QuestionId)) return 0;
 
-            if (!_survrepository.SurveyExists(answer.SurveyId)) return 0;
+            if (!_survrepository.UserSurveyExists(answer)) return 0;
 
             int newid = _ansrepository.Create(answer);
 

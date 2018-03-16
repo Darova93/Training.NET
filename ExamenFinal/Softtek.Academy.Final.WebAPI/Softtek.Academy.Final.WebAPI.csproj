@@ -116,10 +116,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AdminReport.cs" />
     <Compile Include="Models\AnswerDTO.cs" />
     <Compile Include="Models\OptionDTO.cs" />
     <Compile Include="Models\QuestionDTO.cs" />
     <Compile Include="Models\SurveyDTO.cs" />
+    <Compile Include="Models\SurveyQuestions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

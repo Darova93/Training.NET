@@ -34,12 +34,12 @@ namespace Softtek.Academy.Final.Data.Migrations
             context.Questions.Add(new Domain.Model.Question { Id = 9, Text = "Where are you from?", QuestionTypeId = 1, CreatedDate = DateTime.Now, ModifiedDate = null });
             context.Questions.Add(new Domain.Model.Question { Id = 10, Text = "Where do you live?", QuestionTypeId = 1, CreatedDate = DateTime.Now, ModifiedDate = null });
             context.Questions.Add(new Domain.Model.Question { Id = 11, Text = "How much money do you earn?", QuestionTypeId = 1, CreatedDate = DateTime.Now, ModifiedDate = null });
-            context.Questions.Add(new Domain.Model.Question { Id = 12, Text = "Select your favorite styles of music", QuestionTypeId = 2, CreatedDate = DateTime.Now, ModifiedDate = null });
-            context.Questions.Add(new Domain.Model.Question { Id = 13, Text = "Which social medias do you use?", QuestionTypeId = 2, CreatedDate = DateTime.Now, ModifiedDate = null });
-            context.Questions.Add(new Domain.Model.Question { Id = 14, Text = "Which pets do you own right now?", QuestionTypeId = 2, CreatedDate = DateTime.Now, ModifiedDate = null });
-            context.Questions.Add(new Domain.Model.Question { Id = 15, Text = "Select your favorite beverages", QuestionTypeId = 2, CreatedDate = DateTime.Now, ModifiedDate = null });
-            context.Questions.Add(new Domain.Model.Question { Id = 16, Text = "Select the operating systems you use", QuestionTypeId = 2, CreatedDate = DateTime.Now, ModifiedDate = null });
-            context.Questions.Add(new Domain.Model.Question { Id = 17, Text = "Select the internet browser you use", QuestionTypeId = 2, CreatedDate = DateTime.Now, ModifiedDate = null });
+            context.Questions.Add(new Domain.Model.Question { Id = 12, Text = "Select your favorite styles of music", QuestionTypeId = 3, CreatedDate = DateTime.Now, ModifiedDate = null });
+            context.Questions.Add(new Domain.Model.Question { Id = 13, Text = "Which social medias do you use?", QuestionTypeId = 3, CreatedDate = DateTime.Now, ModifiedDate = null });
+            context.Questions.Add(new Domain.Model.Question { Id = 14, Text = "Which pets do you own right now?", QuestionTypeId = 3, CreatedDate = DateTime.Now, ModifiedDate = null });
+            context.Questions.Add(new Domain.Model.Question { Id = 15, Text = "Select your favorite beverages", QuestionTypeId = 3, CreatedDate = DateTime.Now, ModifiedDate = null });
+            context.Questions.Add(new Domain.Model.Question { Id = 16, Text = "Select the operating systems you use", QuestionTypeId = 3, CreatedDate = DateTime.Now, ModifiedDate = null });
+            context.Questions.Add(new Domain.Model.Question { Id = 17, Text = "Select the internet browser you use", QuestionTypeId = 3, CreatedDate = DateTime.Now, ModifiedDate = null });
 
             context.Options.Add(new Domain.Model.Option { Id = 1, Text = "Easy", QuestionId = 1, Value = 1, CreatedDate = DateTime.Now, ModifiedDate = null });
             context.Options.Add(new Domain.Model.Option { Id = 2, Text = "Medium", QuestionId = 1, Value = 2, CreatedDate = DateTime.Now, ModifiedDate = null });

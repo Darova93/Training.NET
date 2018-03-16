@@ -1,6 +1,7 @@
 ﻿using Softtek.Academy.Final.Business.Contracts;
 using Softtek.Academy.Final.Domain.Model;
 using Softtek.Academy.Final.WebAPI.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -11,10 +12,12 @@ namespace Softtek.Academy.Final.WebAPI.Controllers
     public class AdminController : ApiController
     {
         private readonly ISurveyService _surveyService;
+        private readonly IQuestionService _questionService;
 
-        public AdminController(ISurveyService surveyService)
+        public AdminController(ISurveyService surveyService, IQuestionService questionService)
         {
             _surveyService = surveyService;
+            _questionService = questionService;
         }
 
         [Route("")]
@@ -113,7 +116,7 @@ namespace Softtek.Academy.Final.WebAPI.Controllers
             return Ok("Survey deleted!");
         }
 
-        [Route("activate/{id:int}")]
+        [Route("{id:int}/activate")]
         [HttpPut]
         public IHttpActionResult Activate([FromUri] int id)
         {
@@ -126,7 +129,7 @@ namespace Softtek.Academy.Final.WebAPI.Controllers
             return Ok("Survey activated!");
         }
 
-        [Route("deactivate/{id:int}")]
+        [Route("{id:int}/deactivate")]
         [HttpPut]
         public IHttpActionResult DeActivate([FromUri] int id)
         {
@@ -139,36 +142,42 @@ namespace Softtek.Academy.Final.WebAPI.Controllers
             return Ok("Survey deactivated!");
         }
 
-        [Route("status/{id:int}")]
+        [Route("{id:int}/status")]
         [HttpPut]
-        public IHttpActionResult ChangeStatus([FromUri] int id, [FromBody] Status status)
+        public IHttpActionResult ChangeStatus([FromUri] int id, [FromBody] SurveyDTO survey)
         {
             if (id <= 0) return BadRequest("Request is null");
+
+            var status = survey.Status;
 
             var result = _surveyService.ChangeStatus(id, status);
 
             if (result == false) return BadRequest("Unable to change survey status");
 
-            return Ok($"Survey status changed to {nameof(status)}!");
+            return Ok($"Survey status changed to {status.ToString()}!");
         }
 
-        [Route("add/{surveyid:int}")]
+        [Route("{surveyid:int}/add")]
         [HttpPut]
-        public IHttpActionResult AddQuestion([FromUri] int surveyid, [FromBody] int questionid)
+        public IHttpActionResult AddQuestion([FromUri] int surveyid, [FromBody] QuestionDTO question)
         {
-            if (surveyid <= 0 || questionid <= 0) return BadRequest("Request is null");
+            if (question == null) return BadRequest("Request is null");
 
-            var result = _surveyService.AddQuestionToSurvey(questionid, surveyid);
+            if (surveyid <= 0 || question.Id <= 0) return BadRequest("Request is null");
+
+            var result = _surveyService.AddQuestionToSurvey(question.Id, surveyid);
 
             if (result == false) return BadRequest("Unable to assign question to survey!");
 
             return Ok("Question added to survey!");
         }
 
-        [Route("remove/{surveyid:int}")]
+        [Route("{surveyid:int}/remove")]
         [HttpPut]
-        public IHttpActionResult RemoveQuestion([FromUri] int surveyid, [FromBody] int questionid)
+        public IHttpActionResult RemoveQuestion([FromUri] int surveyid, [FromBody] QuestionDTO question)
         {
+            var questionid = question.Id;
+
             if (surveyid <= 0 || questionid <= 0) return BadRequest("Request is null");
 
             var result = _surveyService.RemoveQuestionFromSurvey(questionid, surveyid);
@@ -178,19 +187,67 @@ namespace Softtek.Academy.Final.WebAPI.Controllers
             return Ok("Question removed from survey!");
         }
 
-        //[Route("{surveyid:int}/{questionid:int}")]
-        //[HttpDelete]
-        //public IHttpActionResult RemoveQuestion([FromUri] int surveyid, [FromUri] int questionid)
-        //{
-        //    if (surveyid <= 0 || questionid <= 0) return BadRequest("Request is null");
+        [Route("{surveyid:int}/questions")]
+        [HttpGet]
+        public IHttpActionResult SurveyQuestions([FromUri] int surveyid)
+        {
+            if (surveyid <= 0) return BadRequest("Request is null");
 
-        //    var result = _surveyService.RemoveQuestionFromSurvey(questionid, surveyid);
+            var result = _surveyService.GetSurveyQuestions(surveyid);
 
-        //    if (result == false) return BadRequest("Unable to remove question from survey!");
+            List<QuestionDTO> questionDTO = result.Select(q => new QuestionDTO
+            {
+                Id = q.Id,
+                Text = q.Text,
+                QuestionTypeId = q.QuestionTypeId
 
-        //    return Ok("Question removed from survey!");
-        //}
+            }).ToList();
 
+            return Ok(questionDTO);
+        }
+
+        [Route("questions")]
+        [HttpGet]
+        public IHttpActionResult GetQuestions()
+        {
+            var result = _questionService.GetAll();
+
+            List<QuestionDTO> questionDTO = result.Select(q => new QuestionDTO
+            {
+                Id = q.Id,
+                Text = q.Text,
+                QuestionTypeId = q.QuestionTypeId
+
+            }).ToList();
+
+            return Ok(questionDTO);
+        }
+
+        [Route("report")]
+        [HttpGet]
+        public IHttpActionResult Report()
+        {
+            var surveys = _surveyService.GetAll();
+
+            List<AdminReport> adminReport = new List<AdminReport>();
+
+            foreach (var survey in surveys)
+            {
+                var result = _surveyService.Report(survey.Id);
+
+                if (result != null)
+                {
+                    adminReport.Add(new AdminReport
+                    {
+                        Title = survey.Title,
+                        Description = survey.Description,
+                        Results = result
+                    });
+                }
+            }
+
+            return Ok(adminReport);
+        }
 
     }
 }

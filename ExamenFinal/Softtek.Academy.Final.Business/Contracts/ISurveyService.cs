@@ -29,8 +29,10 @@ namespace Softtek.Academy.Final.Business.Contracts
 
         ICollection<Question> GetSurveyQuestions(int id);
 
-       Survey GetUserSurvey(int id);
+        Survey GetUserSurvey(int id);
 
         ICollection<Survey> GetUserSurveys();
+
+        ICollection<SurveyReport> Report(int id);
     }
 }

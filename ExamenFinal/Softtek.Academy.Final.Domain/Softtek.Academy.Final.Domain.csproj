@@ -59,6 +59,7 @@
     <Compile Include="Model\QuestionType.cs" />
     <Compile Include="Model\Status.cs" />
     <Compile Include="Model\Survey.cs" />
+    <Compile Include="Model\SurveyReport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

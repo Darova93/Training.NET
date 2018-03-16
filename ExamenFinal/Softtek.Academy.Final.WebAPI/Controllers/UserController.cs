@@ -33,31 +33,41 @@ namespace Softtek.Academy.Final.WebAPI.Controllers
                 Id = s.Id,
                 Title = s.Title,
                 Description = s.Description,
-                Status = s.Status,
-                IsActive = s.IsActive
+                IsActive = s.IsActive,
+                Status = s.Status
 
             }).ToList();
 
-            return Ok(result);
+            return Ok(surveyDTO);
         }
 
         [Route("{id:int}")]
         [HttpGet]
         public IHttpActionResult Get([FromUri] int id)
         {
-            var result = _surveyService.Get(id);
+            var result = _surveyService.GetUserSurvey(id);
 
             if (result == null) return NotFound();
 
-            SurveyDTO surveyDTO = new SurveyDTO
+            var getquestions = _surveyService.GetSurveyQuestions(id);
+
+            SurveyQuestions surveyQuestions = new SurveyQuestions
             {
                 Id = result.Id,
                 Title = result.Title,
                 Description = result.Description,
+                IsActive = result.IsActive,
                 Status = result.Status,
+                Questions = (getquestions.Select(q => new QuestionDTO
+                {
+                    Id = q.Id,
+                    Text = q.Text,
+                    QuestionTypeId = q.QuestionTypeId,
+
+                }).ToList())
             };
 
-            return Ok(result);
+            return Ok(surveyQuestions);
         }
 
         [Route("{id:int}")]
@@ -86,5 +96,6 @@ namespace Softtek.Academy.Final.WebAPI.Controllers
 
             return Ok(payload);
         }
+
     }
 }

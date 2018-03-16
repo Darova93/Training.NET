@@ -103,7 +103,10 @@ namespace Softtek.Academy.Final.Business.Implementation
                 case Status.Draft:
                     if (status == Status.Ready)
                     {
-                        return _repository.ChangeStatus(id, status);
+                        if (_repository.GetSurveyQuestions(id).Count() > 0)
+                        {
+                            return _repository.ChangeStatus(id, status);
+                        }
                     }
                     break;
                 case Status.Ready:
@@ -111,7 +114,7 @@ namespace Softtek.Academy.Final.Business.Implementation
                     {
                         return _repository.ChangeStatus(id, status);
                     }
-                    else if (status == Status.Draft && _repository.GetSurveyAnswers(id) == null)
+                    else if (status == Status.Draft && _repository.GetSurveyAnswers(id).Count == 0)
                     {
                         return _repository.ChangeStatus(id, status);
                     }
@@ -129,6 +132,8 @@ namespace Softtek.Academy.Final.Business.Implementation
 
             if (!_quesrepository.QuestionExists(questionid)) return false;
 
+            if (_repository.Get(surveyid).Status != Status.Draft) return false;
+
             if (_quesrepository.SurveyHasQuestion(questionid, surveyid)) return false;
 
             bool result = _repository.AddQuestionToSurvey(questionid, surveyid);
@@ -143,6 +148,8 @@ namespace Softtek.Academy.Final.Business.Implementation
             if (!_repository.SurveyExists(surveyid)) return false;
 
             if (!_quesrepository.QuestionExists(questionid)) return false;
+
+            if (_repository.Get(surveyid).Status != Status.Draft) return false;
 
             if (!_quesrepository.SurveyHasQuestion(questionid, surveyid)) return false;
 
@@ -200,6 +207,19 @@ namespace Softtek.Academy.Final.Business.Implementation
 
             return surveys.Where(s => s.Status != Status.Draft && s.IsActive == true).ToList();
         }
-        
+
+        public ICollection<SurveyReport> Report(int id)
+        {
+            if (id <= 0) return null;
+
+            Survey survey = _repository.Get(id);
+
+            bool result = _repository.HasOpenValue(id);
+
+            if (result) return null;
+
+            return _repository.Report(id);
+        }
+
     }
 }
