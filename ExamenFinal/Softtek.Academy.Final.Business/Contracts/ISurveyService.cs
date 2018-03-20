@@ -25,9 +25,11 @@ namespace Softtek.Academy.Final.Business.Contracts
 
         bool RemoveQuestionFromSurvey(int questionid, int surveyid);
 
-        ICollection<Answer> GetSurveyAnswers(int id);
+        ICollection<Question> GetSurveyUserQuestions(int id);
 
         ICollection<Question> GetSurveyQuestions(int id);
+
+        ICollection<Question> GetNotSurveyQuestions(int id);
 
         Survey GetUserSurvey(int id);
 

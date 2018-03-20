@@ -1,0 +1,20 @@
+﻿@model List<Softtek.Academy.Final.MVC.Models.QuestionDTO>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Text</th>
+            <th>QuestionType</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var question in Model)
+        {
+            <tr>
+                <td>@question.Id</td>
+                <td>@question.Text</td>
+                <td>@question.QuestionTypeId</td>
+            </tr>
+        }
+    </tbody>
+</table>

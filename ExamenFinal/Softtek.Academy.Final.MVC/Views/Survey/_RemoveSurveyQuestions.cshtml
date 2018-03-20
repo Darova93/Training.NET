@@ -1,0 +1,30 @@
+﻿@model List<Softtek.Academy.Final.MVC.Models.QuestionDTO>
+@using Softtek.Academy.Final.MVC.Models
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Text</th>
+            <th>QuestionType</th>
+            <th>Add</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var question in Model)
+        {
+            <tr>
+                <td>@question.Id</td>
+                <td>@question.Text</td>
+                <td>@question.QuestionTypeId</td>
+                <td>
+                    <a type="button"
+                    class="btn btn-primary btn-sm"
+                    href="@Url.Action("RemoveQuestion", new QuestionDTO { Id = question.Id, SurveyId = question.SurveyId })">
+                    <span class="glyphicon glyphicon-minus-sign"></span>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

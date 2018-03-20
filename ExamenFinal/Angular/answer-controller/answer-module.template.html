@@ -1,0 +1,14 @@
+<div>
+    <h2 style="text-align: center">Survey Questions</h2>
+</div>
+
+<form>
+    <ol>
+        <li ng-repeat="question in questions">
+            {{question.Text}}
+            <div ng-repeat="option in question.Options">
+                <input type="{{question.input}}">{{option.Text}}
+            </div>
+        </li>
+    </ol>
+</form>

@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="surveyApp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Answer surveys online!</title>
+    <script src="./resources/angular.js"></script>
+    <script src="./resources/angular-route.js"></script>
+    <script src="./app.js"></script>
+    <script src="./survey-controller/survey-module.js"></script>
+    <script src="./answer-controller/answer-module.js"></script>
+    <script src="./resources/surveyAPI.js"></script>
 </head>
+
 <body>
-    
+
+    <div ng-view></div>
+
 </body>
+
 </html>

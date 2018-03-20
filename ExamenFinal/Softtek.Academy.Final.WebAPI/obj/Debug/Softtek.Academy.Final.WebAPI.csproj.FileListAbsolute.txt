@@ -39,3 +39,6 @@ C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.W
 C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.WebAPI\bin\WebApiContrib.IoC.Ninject.dll
 C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.WebAPI\bin\Softtek.Academy.Final.Business.dll.config
 C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.WebAPI\bin\Softtek.Academy.Final.Domain.dll.config
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.WebAPI\bin\System.Web.Cors.dll
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.WebAPI\bin\System.Web.Http.Cors.dll
+C:\Users\Academia\Documents\david_rodriguezv\ExamenFinal\Softtek.Academy.Final.WebAPI\bin\System.Web.Http.Cors.xml

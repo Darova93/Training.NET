@@ -1,0 +1,31 @@
+<div>
+        <h2 style="text-align: center">Survey List</h2>
+        <br>Order by:
+        <select ng-model="surveySortOrder">
+            <option value="+Title">Title</option>
+            <option value="-Description">Description</option>
+            <option value="+Status">Status</option>
+        </select>
+    </div>
+    
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="survey in surveys | orderBy:surveySortOrder">
+                <td>
+                    <a href="#!/survey/{{survey.Id}}">
+                        {{survey.Title}}
+                    </a>
+                </td>
+                <td>{{survey.Description}}</td>
+                <td>{{survey.Status}}</td>
+            </tr>
+        </tbody>
+    </table>

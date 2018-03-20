@@ -1,0 +1,27 @@
+﻿@model Softtek.Academy.Final.MVC.Models.SurveyDTO
+@using Softtek.Academy.Final.MVC.Models
+
+@{
+    ViewBag.Title = "Add Questions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<hr />
+<h2 class="text-center">
+    @Model.Title
+</h2>
+<h3 class="text-center">
+    @Model.Description
+</h3>
+<hr />
+
+<h2 class="text-center">Survey current questions</h2>
+
+<div id="partial">
+    @{Html.RenderAction("GetQuestionsInSurvey"); }
+</div>
+
+<h2 class="text-center">Available questions</h2>
+
+<div id="partial">
+    @{Html.RenderAction("GetQuestionsNotInSurvey"); }
+</div>

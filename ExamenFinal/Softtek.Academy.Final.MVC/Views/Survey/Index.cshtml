@@ -1,0 +1,55 @@
+﻿@model ICollection<Softtek.Academy.Final.MVC.Models.SurveyDTO>
+@using Softtek.Academy.Final.MVC.Models
+@{
+    ViewBag.Title = "Survey List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="jumbotron text-center">Welcome to your survey generator online!</h2>
+
+<br />
+<div style="display:block">
+    @Html.Partial("_NewSurvey", new SurveyDTO { })
+</div>
+
+
+<hr />
+<br />
+
+@if (Model.Count() <= 0)
+{
+    <h2> You don't have any surveys yet!</h2>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">IsActive</th>
+                <th scope="col">Status</th>
+                <th scope="col">Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var survey in Model)
+                {
+                <tr>
+
+                    <td>@survey.Id</td>
+                    <td>@survey.Title</td>
+                    <td>@survey.Description</td>
+                    <td>@survey.IsActive</td>
+                    <td>@survey.Status</td>
+                    <td>@Html.Partial("_TableButtons", new SurveyDTO { Id = survey.Id })</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+
+

@@ -1,0 +1,55 @@
+﻿@model ICollection<Softtek.Academy.Final.MVC.Models.Report>
+@{
+    ViewBag.Title = "Survey List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="jumbotron text-center">Survey reports</h2>
+
+<hr />
+<br />
+
+@if (Model.Count() <= 0)
+{
+    <h2> You don't have any available reports yet!</h2>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Results</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var repo in Model)
+                {
+                <tr>
+
+                    <td>@repo.Title</td>
+                    <td>@repo.Description</td>
+                    <td>
+                        <ol>
+                            @foreach (var result in repo.Results)
+                            {
+                                <li>
+                                    @result.Question
+                                    <text class="pull-right">Average:  @result.Average</text>
+                                    <br />
+                                </li>
+                                
+                            }
+                        </ol>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+
+

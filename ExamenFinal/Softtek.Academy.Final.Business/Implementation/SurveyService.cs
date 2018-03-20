@@ -170,13 +170,17 @@ namespace Softtek.Academy.Final.Business.Implementation
             return _repository.GetAll();
         }
 
-        public ICollection<Answer> GetSurveyAnswers(int id)
+        public ICollection<Question> GetSurveyUserQuestions(int id)
         {
             if (id <= 0) return null;
 
             if (!_repository.SurveyExists(id)) return null;
 
-            return _repository.GetSurveyAnswers(id);
+            Survey survey = _repository.Get(id);
+
+            if (survey.IsActive == false || survey.Status != Status.Ready) return null;
+
+            return _repository.GetSurveyQuestions(survey.Id).ToList();
         }
 
         public ICollection<Question> GetSurveyQuestions(int id)
@@ -186,6 +190,15 @@ namespace Softtek.Academy.Final.Business.Implementation
             if (!_repository.SurveyExists(id)) return null;
 
             return _repository.GetSurveyQuestions(id);
+        }
+
+        public ICollection<Question> GetNotSurveyQuestions(int id)
+        {
+            if (id <= 0) return null;
+
+            if (!_repository.SurveyExists(id)) return null;
+
+            return _repository.GetNotSurveyQuestions(id);
         }
 
         public Survey GetUserSurvey(int id)
@@ -215,11 +228,14 @@ namespace Softtek.Academy.Final.Business.Implementation
             Survey survey = _repository.Get(id);
 
             bool result = _repository.HasOpenValue(id);
-
             if (result) return null;
+
+            var answers = _repository.GetSurveyAnswers(id).Count();
+            if (answers <= 0) return null;
 
             return _repository.Report(id);
         }
 
+        
     }
 }

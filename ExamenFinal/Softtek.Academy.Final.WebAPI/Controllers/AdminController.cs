@@ -206,11 +206,13 @@ namespace Softtek.Academy.Final.WebAPI.Controllers
             return Ok(questionDTO);
         }
 
-        [Route("questions")]
+        [Route("{surveyid:int}/questionsnot")]
         [HttpGet]
-        public IHttpActionResult GetQuestions()
+        public IHttpActionResult NotSurveyQuestions(int surveyid)
         {
-            var result = _questionService.GetAll();
+            if (surveyid <= 0) return BadRequest("Request is null");
+
+            var result = _surveyService.GetNotSurveyQuestions(surveyid);
 
             List<QuestionDTO> questionDTO = result.Select(q => new QuestionDTO
             {

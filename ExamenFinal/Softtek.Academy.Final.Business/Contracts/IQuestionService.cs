@@ -9,6 +9,6 @@ namespace Softtek.Academy.Final.Business.Contracts
 {
     public interface IQuestionService : IGenericService<Question>
     {
-
+        ICollection<Option> GetQuestionsOptions(int id);
     }
 }

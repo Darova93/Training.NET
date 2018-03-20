@@ -32,7 +32,7 @@ namespace Softtek.Academy.Final.Data.Implementation
             {
                 if (id <= 0) return null;
 
-                Question question = Get(id);
+                Question question = context.Questions.SingleOrDefault(q => q.Id == id);
                 if (question == null) return null;
 
                 return question.Options.ToList();

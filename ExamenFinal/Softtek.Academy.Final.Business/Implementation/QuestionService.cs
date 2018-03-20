@@ -30,5 +30,16 @@ namespace Softtek.Academy.Final.Business.Implementation
         {
             return _repository.GetAll();
         }
+
+        public ICollection<Option> GetQuestionsOptions(int id)
+        {
+            if (id <= 0) return null;
+
+            if (!_repository.QuestionExists(id)) return null;
+
+            Question question = _repository.Get(id);
+
+            return _repository.GetQuestionOptions(question.Id).ToList();
+        }
     }
 }

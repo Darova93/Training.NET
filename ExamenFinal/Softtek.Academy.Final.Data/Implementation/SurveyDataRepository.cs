@@ -282,5 +282,34 @@ namespace Softtek.Academy.Final.Data.Implementation
             return report;
         }
 
+        public ICollection<Question> GetNotSurveyQuestions(int id)
+        {
+            using (var context = new SurveySystemDbContext())
+            {
+                ICollection<Question> result = new HashSet<Question>();
+
+                if (id <= 0) return null;
+
+                if (!SurveyExists(id)) return null;
+
+                var questions = context.Questions.ToList();
+
+                foreach (var question in questions)
+                {
+                    question.Surveys.ToList();
+                    if (question.Surveys.Any(s => s.Id == id))
+                    {
+
+                    }
+                    else
+                    {
+                        result.Add(question);
+                    }
+                }
+
+                return result;
+            }
+        }
+
     }
 }

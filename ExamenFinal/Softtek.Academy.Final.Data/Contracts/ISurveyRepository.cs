@@ -25,6 +25,8 @@ namespace Softtek.Academy.Final.Data.Contracts
 
         ICollection<Question> GetSurveyQuestions(int id);
 
+        ICollection<Question> GetNotSurveyQuestions(int id);
+
         bool SurveyExists(int id);
 
         bool UserSurveyExists(Answer answer);

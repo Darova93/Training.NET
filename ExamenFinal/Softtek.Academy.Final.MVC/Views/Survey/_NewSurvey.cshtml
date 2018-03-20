@@ -1,0 +1,23 @@
+﻿@model Softtek.Academy.Final.MVC.Models.SurveyDTO
+
+
+@using (Html.BeginForm("New", "Survey"))
+{
+    <div class="form-group">
+        @Html.LabelFor(i => i.Title)
+        @Html.TextBoxFor(i => i.Title, new { @class = "form-control" })
+        @Html.ValidationMessageFor(i => i.Title)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(i => i.Description)
+        @Html.TextAreaFor(i => i.Description, new { @class = "form-control" })
+        @Html.ValidationMessageFor(i => i.Description)
+    </div>
+
+
+        <button type="submit" class="danger">Save</button>
+
+    
+}
+
