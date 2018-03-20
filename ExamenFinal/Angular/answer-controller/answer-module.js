@@ -44,32 +44,34 @@
             $scope.questions = questions;
         })
 
-        // this.AnswerSurvey = function () {
-        //     surveyform.forEach(answer => {
-        //         if(angular.isNumber(answer.Answer)){
-        //             var tosend ={
-        //                 SurveyId = answer.SurveyId,
-        //                 QuestionId = answer.QuestionId,
-        //                 Guest = answer.Guest,
-        //                 OptionId = answer.Answer
-        //             }   
-        //         }
-        //         else{
-        //             var tosend ={
-        //                 SurveyId = answer.SurveyId,
-        //                 QuestionId = answer.QuestionId,
-        //                 Guest = answer.Guest,
-        //                 OpenText = answer.Answer
-        //             }
-        //         }
-                
-        //         surveyAPI.PostAnswer(tosend);
-        //     });   
-
-        //     return ("ok");
-        // }
+        
 
     };
+
+    // var AnswerSurvey = function () {
+    //     surveyform.forEach(answer => {
+    //         if(angular.isNumber(answer.Answer)){
+    //             var tosend ={
+    //                 SurveyId = answer.SurveyId,
+    //                 QuestionId = answer.QuestionId,
+    //                 Guest = answer.Guest,
+    //                 OptionId = answer.Answer
+    //             }   
+    //         }
+    //         else{
+    //             var tosend ={
+    //                 SurveyId = answer.SurveyId,
+    //                 QuestionId = answer.QuestionId,
+    //                 Guest = answer.Guest,
+    //                 OpenText = answer.Answer
+    //             }
+    //         }
+            
+    //         surveyAPI.PostAnswer(tosend);
+    //     });   
+
+    //     return ("ok");
+    // }
 
     module.controller("answerController", answerController);
 
