@@ -11,7 +11,8 @@
             })
             .when("/survey/:surveyid", {
                 templateUrl: "./answer-controller/answer-module.template.html",
-                controller: "answerController"
+                controller: "answerController",
+                controllerAs: "ctrl"
             })
         .otherwise({redirectTo:"/survey"});
 

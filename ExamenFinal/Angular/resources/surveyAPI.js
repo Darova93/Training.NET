@@ -16,6 +16,22 @@
                 });
         };
 
+        var postAnswer = function(data){
+    
+            var baseUrl = 'http://localhost:64082/guest/survey/'+ data.SurveyId;
+            var jsondata = JSON.stringify(data);
+    
+            var config = {
+                method: "POST",
+                url: baseUrl,
+                data: jsondata,
+                headers: {
+                    'Content-Type': 'application/json; charset=utf-8'
+                }
+            };
+            return $http(config);
+        }
+
         return {
             getSurveys: getSurveys,
             getQuestions: getQuestions,

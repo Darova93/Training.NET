@@ -2,13 +2,15 @@
     <h2 style="text-align: center">Survey Questions</h2>
 </div>
 
-<form>
+<form ng-submit="AnswerSurvey()">
     <ol>
         <li ng-repeat="question in questions">
             {{question.Text}}
             <div ng-repeat="option in question.Options">
-                <input type="{{question.input}}">{{option.Text}}
+                <input type="{{question.input}}" ng-model="surveyform[question.count].Answer" ng-value="{{option.Id}}">{{option.Text}}
             </div>
         </li>
     </ol>
+    <input type="submit" value="send">
 </form>
+
