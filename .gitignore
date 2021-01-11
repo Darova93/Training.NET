@@ -1,0 +1,9 @@
+.vs/
+[Dd]ebug/
+[Bb]in/
+[Oo]bj/
+**/packages/*
+**/packages/build
+*.nupkg
+[Bb]uild[Ll]og.*
+project.lock.json
